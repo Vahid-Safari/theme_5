@@ -1,0 +1,352 @@
+/* Module:  ی */
+ 
+.main_menu{
+	{$main_menu_outer_style[css]}
+	.main_menu_inner{
+		{$main_menu_style[css]}
+	}
+}
+
+
+.sf-arrows, .menu-arrows{
+	.sf-sub-indicator{
+		display: none;
+	}
+}
+
+.sf-menu{
+
+{if="$enable_responsive"}
+	&.select-menu {
+	  display: none;
+	}
+{/if}
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font:@font_weight 16px/25px Font1,Arial;
+	{if="$seacrhbox_position==3 || $time_position==3 || $social_position==3 || $basket_position==3"}
+			float: {$align};
+	{else}
+		width:100%;
+		{if="$main_menu_strech_items==1 || $main_menu_same_width==1"}
+			 display: table;
+		{else}
+			float: {if="$main_menu_align=='center'"}none{else}{$main_menu_align}{/if};
+		{/if}
+		{if="$main_menu_same_width==1"}
+			table-layout: fixed;
+		{/if}
+	{/if}
+	text-align:{$main_menu_align};
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a {
+		display: block;
+		position: relative;
+		 transition: background .2s;
+	}
+	li {
+		 position: relative;
+		 white-space: nowrap;
+/*		 &:hover > ul, &.sfHover > ul {
+		 	display: block;
+		 }*/
+
+	}
+	> li {
+		{if="$main_menu_align=='center'"}
+			float: none ;
+			text-align:{$main_menu_link_align};
+			{if="$main_menu_strech_items==1 || $main_menu_same_width==1"}
+				display: table-cell;
+			{else}
+				display: inline-block;
+			{/if}
+		{else}
+			float: {$main_menu_align};
+		{/if}
+		&.sfHover{
+		 	transition: none;
+		 	> a{
+		 		{$main_menu_link_hover_style[css]}
+		 	}
+		}
+		> a{
+				{$main_menu_link_style[css]}
+				&:hover{
+					{$main_menu_link_hover_style[css]}
+				}
+				&:focus,&:active,&.active{
+					{$main_menu_link_active_style[css]}
+				}
+		}
+	}
+	ul {
+		position: absolute;
+		display: none;
+		top: 100%;
+		{$align}: 0;
+		z-index: 99;
+		{$main_menu_dropdown_style[css]}
+		min-width: 12em;
+		text-align:{$align};
+		box-sizing: content-box;
+		ul {
+			top: 50%;
+			{$align}: 95%;
+		}
+		a:hover, li.sfHover >a{
+			{$main_menu_dropdown_link_hover_style[css]}
+		}
+		li a{
+			{$main_menu_dropdown_link_style[css]}
+			&:focus,&:active,&.active{
+				{$main_menu_dropdown_link_active_style[css]}
+			}
+		}
+	}
+
+	&.sf-arrows, &.menu-arrows{
+		.sf-with-ul {
+			{if="$menu_2_arrow!='none'"}
+				padding-{$xalign}: 2em;
+			{/if}	
+		}
+	}
+	.sf-arrow{
+		position: absolute;
+		{$xalign}: 1em;
+		font-size: 0.8em;
+		line-height: 2em;
+		width: 1em;
+	}
+}
+
+{if="$sidebar_menu_type=='simple'"}
+.side_menu{
+	overflow:hidden;
+	padding:0;
+	a{
+		text-align: {$align};
+		display:block;
+		font:@font_weight 15px/32px Font1,Arial;
+		{$side_menu_link_style[css]}
+		&:hover{
+			{$side_menu_link_hover_style[css]}
+		}
+		&:focus,&:active,&.active{
+			{$side_menu_link_active_style[css]}
+		}
+	}
+	li{
+		a{
+			padding-{$align}: 5%;
+		}
+		li{
+			a{
+				padding-{$align}: 10%;
+				font:normal 12px/25px Font1;
+			}
+			li a{
+				padding-{$align}: 15%;
+				font:normal 11px/25px Font1;
+			}
+		}
+	}
+}
+{else}
+
+.sf-vertical{
+	{if="$enable_responsive"}
+		&.select-menu {
+		  display: none;
+		}
+	{/if}
+	
+	{$side_menu_style[css]}
+	list-style: none;
+	font:@font_weight 15px/20px Font1,Arial;
+	.sf-arrow{
+		position: absolute;
+		{$xalign}: 0.4em;
+		font-size: 0.8em;
+		line-height: 1.7em;
+		width: 1em;
+	}
+	a {
+		display: block;
+		position: relative;
+		 transition: background .2s;
+	}
+	li {
+		 position: relative;
+		/* white-space: nowrap;*/
+		 &:hover > ul, &.sfHover > ul {
+		 	display: block;
+		 }
+		 &.sfHover{
+		 	transition: none;
+		 	> a{
+		 		{$side_menu_link_hover_style[css]}
+		 	}
+		 }
+	}
+	> li {
+		> a{
+				{$side_menu_link_style[css]}
+				&:hover{
+					outline:0;
+					{$side_menu_link_hover_style[css]}
+				}
+				&:focus,&:active,&.active{
+					outline:0;
+					{$side_menu_link_active_style[css]}
+				}
+		}
+	}
+	ul {
+		{$side_menu_dropdown_style[css]}
+		a:hover, li.sfHover >a{
+			{$side_menu_dropdown_link_hover_style[css]}
+		}
+		li a{
+			{$side_menu_dropdown_link_style[css]}
+			&:focus,&:active,&.active{
+				{$side_menu_dropdown_link_active_style[css]}
+			}
+		}
+	}
+
+}
+{if="$sidebar_menu_type=='dropdown'"}
+.sf-vertical{
+	li{
+		a{
+			width:100%;
+		}
+		ul{
+				display: none;
+				position: absolute;
+				z-index: 99;
+				width: 100%;
+				top: 50%;
+				{$align}: 95%;
+				{$xalign}: auto;
+		}
+		li ul{
+			{$align}:  95%;
+		}
+	}
+	.sf-sub-indicator{
+		display: none;
+	}
+	&.sf-arrows,&.menu-arrows{
+		.sf-with-ul {
+			padding-{$xalign}: {$side_menu_link_style[padding][left]*2 + 10}px;
+			&:after {
+				{$xalign}: {$side_menu_link_style[padding][left]}px;
+			}
+		}
+		> li > .sf-with-ul:after,
+		{
+			border-{$align}-color: {$side_menu_link_style[text][color]};
+		}
+		> li > .sf-with-ul:hover:after,
+		> li.sfHover > .sf-with-ul:after,
+		> li > a.active.sf-with-ul:after,
+		{
+			border-{$align}-color: {$side_menu_link_hover_style[text][color]};
+		}
+		ul {
+			.sf-with-ul:after {
+				border-{$align}-color: {$side_menu_dropdown_link_style[text][color]};
+			}
+			.active.sf-with-ul:after,
+			li:hover > .sf-with-ul:after,
+			.sfHover > .sf-with-ul:after
+			{
+				border-{$align}-color:{$side_menu_dropdown_link_hover_style[text][color]};
+			}
+		}
+	}
+}
+{else}
+.sf-vertical{
+	li{
+		a{
+				position: static;
+				display: block;
+				width: auto;
+			 span{
+			 	font-size: 10px;
+			 }
+			 &.sf-with-ul:after{
+				 	content: "";
+				 	width: 10px;
+				 	height: 10px;
+				 	display: block;
+				 	border-color: transparent {$side_menu_dropdown_link_style[text][color]} transparent transparent;
+				 	border-width: 5px;
+				 	border-style: solid;
+				 	position: absolute;
+				 	top: 12px;
+				 	{$xalign}: 10px;
+				 	display: none;
+			 }
+		}
+
+		ul{
+				box-shadow: none;
+				position: static;
+				width: auto;
+				border-radius: 0;
+				box-sizing: content-box;
+		}
+	}
+	>li{
+		&:first-child a{
+		}
+	}
+	.opened > .grower{
+	
+	}
+	.grower{
+		cursor: pointer;
+		position: absolute;
+		{$xalign}: 0px;
+		top: 0px;
+		font-size: 16px;
+		padding: 8px;
+		&:hover,&.open-menu{
+			
+		}
+	}
+}
+{/if}
+
+{/if}
+
+
+
+
+{if="$enable_responsive"}
+@media (max-width: 767px) {
+
+.sf-menu,.sf-vertical{
+	display:none;
+	&.dynamized{
+		display:block;
+	}
+	&.select-menu {
+	  display:block;
+	  width: 100%;
+	  direction: rtl;
+		text-align: right;
+	}
+} 
+}
+{/if}

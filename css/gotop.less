@@ -1,0 +1,22 @@
+
+#gotop{
+	position:fixed;
+	bottom:35px;
+	{$gotop_position}:50px;
+	z-index:99999;
+	display:none;
+	a{
+		display:inline-block;
+		width: {$gotop_size}px;
+		line-height: 1;
+		font-size:{$gotop_size}px;
+		box-sizing: content-box;
+		i{
+			{$gotop_style[css]}
+			transition:250ms linear all;
+		}
+		&:hover i{
+			{$gotop_hover_style[css]}
+		}
+	}
+}

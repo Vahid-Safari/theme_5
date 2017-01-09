@@ -1,0 +1,104 @@
+footer{
+	clear: both;
+	{$footer_style[css]}
+	a{
+		
+	}
+	.footer_inner{
+		{$footer_inner_style[css]}
+	}
+	.menu_4 {
+		margin:0 auto;
+		text-align: center;
+		{if="$social_position==4"}
+			float: right;
+		{/if}
+		li{
+			display: inline-block;
+			a{
+				display: block;
+				{$footer_menu_link_style[css]}
+				&:hover{
+					{$footer_menu_link_hover_style[css]}
+				}
+				&:active,&.active{
+					{$footer_menu_link_active_style[css]}
+				}
+			}
+		}
+	}
+	.copyright_area{
+		clear: both;
+		padding-top: 10px;
+		}
+	#copyright{float: {$align};}
+
+	{if="$footer_custom"}
+		{$footer_custom}
+	{/if}
+}
+
+
+{if="$enable_responsive"}
+
+/* #Mobile (Landscape) */
+@media (max-width: 767px) {
+header{
+	width:100%;
+	text-align: center;
+	.header_top{
+		.header_top_inner{
+			.menu_1{
+				float: none;
+				li{
+					float: none;
+					display: inline-block;
+				}	
+			}
+			.datetime{
+				float: none;
+				margin: 12px;
+			}
+		}
+	}
+	.header_primary{
+		.header_primary_inner{
+			.header_logo{
+				height:auto;
+				float: none;
+				{if="$logo"}
+					background-position:top;
+					padding-{$align}:0;
+					padding-top:{$logo_dimension[y]}px;
+				{/if}
+				{if="$show_logo_title"}
+					h1, h2{
+						float: none;
+						clear:both;
+						text-align:center;
+					}
+				{/if}
+			}
+		}
+	}
+
+}
+
+}
+
+
+@media  (max-width: 480px) {
+	footer {
+		#copyright {
+			float: none;
+			text-align: center;
+			margin: 20px auto 0;
+		}
+
+		#smarttry_logo,#shopfa_logo {
+			float: none;
+			margin: 20px auto 0;
+		}
+	}
+} 
+{/if}

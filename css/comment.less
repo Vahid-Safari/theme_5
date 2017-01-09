@@ -1,0 +1,90 @@
+/* Comments */
+#box_comment_form{
+	{$comment_form_style[css]}
+}
+
+#comments{
+	font-size:11px;
+	line-height:18px;
+	.comment{
+		margin-bottom:15px;
+		clear:both;
+	}
+	ul{
+		margin-{$align}:50px;
+	}
+	.comment_title{
+		display:block;
+		/*height:40px;*/
+		line-height:32px;
+		{$comment_title_style[css]}
+	}
+	.on{
+		/*background-color: rgba(255, 255, 255, 0.1);*/
+	} 
+	.off{
+		/*background-color:rgba(255, 255, 255, 0.2);*/
+	} 
+	.comment_avatar{
+		height: 32px;
+		float: {$align};
+		img{
+			display:block;
+			width:32px;
+		}
+	}
+	.comment_name{
+		font:@font_weight 19px/32px Font1,Arial;
+		float:{$align};
+		display:block;
+		padding-{$align}:10px;
+	}
+	.comment_date{
+		float:{$align};
+		display:block;
+		text-align:{$align};
+		padding-{$align}:20px;
+	}
+	.comment_vote{
+		float:{$xalign};
+		display:block;
+		height: 32px;
+	}
+	.comment_message{
+		padding:5px 0px;
+		clear:both;
+	}
+	.comment_options{
+		padding:10px 0;
+		float:{$xalign};
+		visibility:hidden;
+		.btn-group{
+			margin-{$align}:5px;
+		}
+	}
+
+}
+
+#comment_form{
+	padding:5px;
+	margin: 0;
+	td{
+		padding:5px 10px;
+		border:none;
+		vertical-align: top;
+	}
+	#comment_note{
+		font: normal 12px/20px Font1;
+		float: {$align};
+		width: 200px;
+		margin-{$xalign}: 30px;
+		li{
+			list-style-type:square;
+			margin-{$align}:10px;
+		}
+		&:empty{
+			display:none;
+		}
+	}
+}
+

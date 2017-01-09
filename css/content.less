@@ -1,0 +1,48 @@
+.content{
+	text-align: justify;
+	line-height: 25px;
+	{$content_style[css]}
+	overflow: hidden;
+	.content_header{
+		{$content_header_style[css]}
+		display:block;
+		/*min-height: 40px;*/
+		a{
+			/*color:{$content_header_style[text][color]};*/
+		}
+		h2{
+			width:auto;
+			float: {$align};
+			/*color:{$title_color};*/
+			line-height: 36px;
+		}
+		h3{
+			float: {$xalign};
+			font: normal 12px/36px Font1;
+			text-align:{$align};
+			width:auto;
+			margin:0;
+			form{
+				margin:0;
+			}
+			input, select{
+				padding:4px;
+				background-color:#fff !important;
+			}
+			.btn{
+				margin: 0px;
+				/*color:#000;*/
+			}
+		}
+	}
+	.content_body{
+		{$content_body_style[css]}
+		text-align: justify;
+		line-height: 25px;
+
+	}
+	.content_text{
+		text-align: justify;
+		line-height: 25px;
+	}
+}

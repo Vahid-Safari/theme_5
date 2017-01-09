@@ -1,0 +1,163 @@
+.unresponsive body {
+	min-width: {$container_max_width}px;
+	.container {
+	  max-width: none !important;
+	  width: {$container_max_width}px !important;
+	}
+	[class^="col-"] {
+		float: {$align};
+	}
+	.col-sm-1, .col-md-1, .col-lg-1 {
+	    width: 8.33333333% !important;
+	}
+	.col-sm-2, .col-md-2, .col-lg-2 {
+	    width: 16.66666667% !important;
+	}
+	.col-sm-3, .col-md-3, .col-lg-3 {
+	    width: 25% !important;
+	}
+	.col-sm-4, .col-md-4, .col-lg-4 {
+	    width: 33.33333333% !important;
+	}
+	.col-sm-5, .col-md-5, .col-lg-5 {
+	    width: 41.66666667% !important;
+	}
+	.col-sm-6, .col-md-6, .col-lg-6 {
+	    width: 50% !important;
+	}
+	.col-sm-7, .col-md-7, .col-lg-7 {
+	    width: 58.33333333% !important;
+	}
+	.col-sm-8, .col-md-8, .col-lg-8 {
+	    width: 66.66666667% !important;
+	}
+	.col-sm-9, .col-md-9, .col-lg-9 {
+	    width: 75% !important;
+	}
+	.col-sm-10, .col-md-10, .col-lg-10 {
+	    width: 83.33333333% !important;
+	}
+	.col-sm-11, .col-md-11, .col-lg-11 {
+	    width: 91.66666667% !important;
+	}
+	.col-sm-12, .col-md-12, .col-lg-12 {
+	    width: 100% !important;
+	}
+	.col-sm-offset-0, .col-md-offset-0, .col-lg-offset-0 {
+	    margin-{$align}: 0 !important;
+	}
+	.col-sm-offset-1, .col-md-offset-1, .col-lg-offset-1 {
+	    margin-{$align}: 8.33333333% !important;
+	}
+	.col-sm-offset-2, .col-md-offset-2, .col-lg-offset-2 {
+	    margin-{$align}: 16.66666667% !important;
+	}
+	.col-sm-offset-3, .col-md-offset-3, .col-lg-offset-3 {
+	    margin-{$align}: 25% !important;
+	}
+	.col-sm-offset-4, .col-md-offset-4, .col-lg-offset-4 {
+	    margin-{$align}: 33.33333333% !important;
+	}
+	.col-sm-offset-5, .col-md-offset-5, .col-lg-offset-5 {
+	    margin-{$align}: 41.66666667% !important;
+	}
+	.col-sm-offset-6, .col-md-offset-6, .col-lg-offset-6 {
+	    margin-{$align}: 50% !important;
+	}
+	.col-sm-offset-7, .col-md-offset-7, .col-lg-offset-7 {
+	    margin-{$align}: 58.33333333% !important;
+	}
+	.col-sm-offset-8, .col-md-offset-8, .col-lg-offset-8 {
+	    margin-{$align}: 66.66666667% !important;
+	}
+	.col-sm-offset-9, .col-md-offset-9, .col-lg-offset-9 {
+	    margin-{$align}: 75% !important;
+	}
+	.col-sm-offset-10, .col-md-offset-10, .col-lg-offset-10 {
+	    margin-{$align}: 83.33333333% !important;
+	}
+	.col-sm-offset-11, .col-md-offset-11, .col-lg-offset-11 {
+	    margin-{$align}: 91.66666667% !important;
+	}
+	.col-sm-offset-12, .col-md-offset-12, .col-lg-offset-12 {
+	    margin-{$align}: 100% !important;
+	}
+	.visible-xs, .visible-xs-block, .visible-sm, .visible-sm-block {
+	    display: block !important;
+	}
+	.visible-xs-inline, .visible-sm-inline {
+	    display: inline !important;
+	}
+	.visible-xs-inline-block, .visible-sm-inline-block {
+	    display: inline-block !important;
+	}
+	.hidden-xs, .hidden-sm {
+	    display: inline-block !important;
+	}
+	.container .navbar-header,
+	.container .navbar-collapse {
+	    margin-{$xalign}: 0;
+	    margin-{$align}: 0;
+	}
+	.navbar-header {
+	    float: {$align};
+	}
+	.navbar-collapse {
+	    display: block !important;
+	    height: auto !important;
+	    padding-bottom: 0;
+	    overflow: visible !important;
+	}
+	.navbar-toggle {
+	    display: none;
+	}
+	.navbar-collapse {
+	    border-top: 0;
+	}
+	.navbar-brand {
+	   /* margin-{$align}: -15px;*/
+	}
+	.navbar-nav {
+		float: {$align};
+		margin: 0;
+		> li {
+			float: {$align};
+			> a {
+				padding: 15px;
+			}
+		}
+		&.navbar-{$xalign} {
+			float: {$xalign};
+		}
+	}
+	.navbar .navbar-nav .open .dropdown-menu {
+	    position: absolute;
+	    float: {$align};
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    border: 1px solid rgba(0, 0, 0, .15);
+	    border-width: 0 1px 1px;
+	    border-radius: 0 0 4px 4px;
+	    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #333;
+	}
+	.navbar .navbar-nav .open .dropdown-menu{
+		> li > a:hover,
+		> li > a:focus,
+		> .active > a,
+		> .active > a:hover,
+		> .active > a:focus {
+			color: #fff !important;
+			background-color: #428bca !important;
+		}
+		> .disabled > a,
+		> .disabled > a:hover,
+		> .disabled > a:focus {
+			color: #999 !important;
+			background-color: transparent !important;
+		}
+	}
+	
+}

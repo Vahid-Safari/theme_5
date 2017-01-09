@@ -1,0 +1,2189 @@
+{
+  "Global":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_responsive",
+      "label":"enable_responsive",
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"number",
+      "name":"container_max_width",
+      "label":"container_max_width",
+      "value":"1024"
+    },
+    {
+    	"access":"2",
+    	"global":"1",
+      "type":"server_file",
+      "name":"favicon",
+      "value":"",
+      "label":"\u0622\u06cc\u06a9\u0648\u0646 \u0633\u0627\u06cc\u062a",
+      "help":"\u062a\u0635\u0648\u06cc\u0631 \u06a9\u0648\u0686\u06a9\u06cc \u06a9\u0647 \u062f\u0631 \u06a9\u0646\u0627\u0631 \u0622\u062f\u0631\u0633 \u0633\u0627\u06cc\u062a \u0642\u0631\u0627\u0631 \u0645\u06cc\u06af\u06cc\u0631\u062f"
+    },
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"link_style",
+     "label":"\u0631\u0646\u06af \u0644\u06cc\u0646\u06a9\u0647\u0627",
+      "target":"a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"link_hover_style",
+      "label":"\u0631\u0646\u06af \u0644\u06cc\u0646\u06a9\u0647\u0627 (Hover)",
+      "target":"a:hover",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"link_active_style",
+       "label":"\u0644\u06cc\u0646\u06a9 \u0648 \u0646\u0648\u0634\u062a\u0647 \u0647\u0627\u06cc \u0641\u0639\u0627\u0644",
+      "target":"a:active, a:focus",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "name":"border_color",
+      "label":"\u0631\u0646\u06af \u062e\u0637\u0648\u0637",
+      "value":"#ebebeb"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"textleft",
+      "name":"home_sides_width",
+      "label":"home_sides_width",
+      "help":"\u0628\u0627\u06cc\u062f \u062d\u0627\u0648\u06cc \u0633\u0647 \u0639\u062f\u062f \u0628\u0627 \u0641\u0627\u0635\u0644\u0647 \u06cc \u0648\u06cc\u0631\u06af\u0648\u0644 \u0648 \u0645\u062c\u0645\u0648\u0639 12 \u0628\u0627\u0634\u062f",
+      "value":"0,9,3"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"textleft",
+      "name":"sides_width",
+      "label":"\u0639\u0631\u0636 \u0633\u0647 \u0633\u0627\u06cc\u062f \u0627\u0635\u0644\u06cc",
+      "help":"\u0628\u0627\u06cc\u062f \u062d\u0627\u0648\u06cc \u0633\u0647 \u0639\u062f\u062f \u0628\u0627 \u0641\u0627\u0635\u0644\u0647 \u06cc \u0648\u06cc\u0631\u06af\u0648\u0644 \u0648 \u0645\u062c\u0645\u0648\u0639 12 \u0628\u0627\u0634\u062f",
+      "value":"0,9,3"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"number",
+      "label":"\u0641\u0627\u0635\u0644\u0647 \u0628\u06cc\u0646 \u0628\u0644\u0648\u06a9 \u0647\u0627",
+      "name":"box_bottom_padding",
+      "value":"20"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"pageslist_align",
+      "label":"\u062c\u0647\u062a \u0642\u0631\u0627\u0631 \u06af\u06cc\u0631\u06cc Paging",
+      "option":{
+        "left":"\u0686\u067e",
+        "center":"\u0648\u0633\u0637",
+        "right":"\u0631\u0627\u0633\u062a"
+      },
+      "value":"center"
+    },
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"logo_align",
+      "label":"logo_align",
+      "option":{
+      	"right":"\u0631\u0627\u0633\u062a",
+        "left":"\u0686\u067e",
+        "center":"\u0648\u0633\u0637"
+      },
+      "value":"right"
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"server_file",
+      "name":"logo",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"dimension",
+      "label":"\u0633\u0627\u06cc\u0632 \u0644\u0648\u06af\u0648",
+      "name":"logo_dimension",
+      "value":"100x100"
+    },
+    {
+      "access":"2",
+      "global":"0",
+      "type":"yesno",
+      "label":"\u0646\u0645\u0627\u06cc\u0634 \u0639\u0646\u0648\u0627\u0646 \u0633\u0627\u06cc\u062a",
+      "name":"show_logo_title",
+      "value":"1",
+      "help":"\u0646\u0645\u0627\u06cc\u0634 \u0639\u0646\u0648\u0627\u0646 \u0648 \u0634\u0639\u0627\u0631 \u0633\u0627\u06cc\u062a \u062f\u0631 \u0644\u0648\u06af\u0648"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "name":"header_primary_logo_color",
+      "label":"header_primary_logo_color",
+      "rel":"show_logo_title",
+      "value":"#888888"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "name":"header_primary_logo_hover_color",
+      "label":"header_primary_logo_hover_color",
+      "rel":"show_logo_title",
+      "value":"#888888"
+    },
+    
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_live_search",
+      "label":"enable_live_search",
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_smoothscroll",
+      "label":"enable_smoothscroll",
+      "value":"0"
+    },
+    
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_wow",
+      "label":"enable_wow",
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_hover_effect",
+      "label":"enable_hover_effect",
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_enamad",
+      "label":"نماد اعتماد شناور نمایش داده شود",
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"code",
+      "name":"enamad_code",
+      "rel":"enable_enamad",
+      "label":"کد نماد",
+      "value":""
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"enamad_position",
+      "rel":"enable_enamad",
+      "label":"موقعیت قرار گیری نماد",
+      "option":{
+        "right":"راست",
+        "left":"چپ"
+      },
+      "value":"left"
+    },
+    
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"enable_google_analytics",
+      "label":"آمارگیر گوگل فعال باشد",
+      "value":""
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"textleft",
+      "name":"google_analytics_track_id",
+      "rel":"enable_google_analytics",
+      "label":"کد آمارگیر گوگل",
+      "help":"تنها کافیست در بین کد دریافتی گوگل، Track ID را در این مکان درج کنید",
+      "placeholder":"UA-00000000-0",
+      "value":""
+    }
+    
+  ],
+  "Page":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"body_style",
+      "label":"body_style",
+      "target":"body",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"page_style",
+      "label":"page_style",
+      "target":".page",
+      "value":{}
+    },
+    {
+      "access":"2",
+      "global":"0",
+      "type":"select",
+      "name":"page_font",
+      "label":"page_font",
+      "option":{
+      	"IranSans":"IranSans",
+        "BKoodakBold":"\u06a9\u0648\u062f\u06a9",
+        "WebRoya":"\u0631\u0648\u06cc\u0627",
+        "WebMitraBold":"\u0645\u06cc\u062a\u0631\u0627",
+        "WebTraffic":"\u062a\u0631\u0627\u0641\u06cc\u06a9",
+        "WebNasim":"\u0646\u0633\u06cc\u0645",
+        "WebTabassom":"\u062a\u0628\u0633\u0645",
+        "WebTitr":"\u062a\u06cc\u062a\u0631",
+        "WebYekan":"\u06cc\u06a9\u0627\u0646",
+        
+        "Open Sans":"Open Sans",
+        "Helvetica":"Helvetica"
+      },
+      "value":"WebYekan"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"font_weight",
+      "label":"\u062d\u062c\u0645 \u0641\u0648\u0646\u062a",
+      "option":{
+        "normal":"\u0646\u0631\u0645\u0627\u0644",
+        "bold":"\u0628\u0648\u0644\u062f"
+      },
+      "value":"normal"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"page_2rd_font",
+      "label":"\u0641\u0648\u0646\u062a \u0633\u0627\u06cc\u062a",
+      "option":{
+        "none":"none",
+        "IranSans":"IranSans",
+        "BKoodakBold":"\u06a9\u0648\u062f\u06a9",
+        "WebRoya":"\u0631\u0648\u06cc\u0627",
+        "WebMitraBold":"\u0645\u06cc\u062a\u0631\u0627",
+        "WebTraffic":"\u062a\u0631\u0627\u0641\u06cc\u06a9",
+        "WebNasim":"\u0646\u0633\u06cc\u0645",
+        "WebTabassom":"\u062a\u0628\u0633\u0645",
+        "WebTitr":"\u062a\u06cc\u062a\u0631",
+        "WebYekan":"\u06cc\u06a9\u0627\u0646",
+        "Open Sans":"Open Sans",
+        "Helvetica":"Helvetica"
+      },
+      "value":"none"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"page_3rd_font",
+      "label":"\u0641\u0648\u0646\u062a \u0633\u0627\u06cc\u062a",
+      "option":{
+        "none":"none",
+        "IranSans":"IranSans",
+        "BKoodakBold":"\u06a9\u0648\u062f\u06a9",
+        "WebRoya":"\u0631\u0648\u06cc\u0627",
+        "WebMitraBold":"\u0645\u06cc\u062a\u0631\u0627",
+        "WebTraffic":"\u062a\u0631\u0627\u0641\u06cc\u06a9",
+        "WebNasim":"\u0646\u0633\u06cc\u0645",
+        "WebTabassom":"\u062a\u0628\u0633\u0645",
+        "WebTitr":"\u062a\u06cc\u062a\u0631",
+        "WebYekan":"\u06cc\u06a9\u0627\u0646",
+        "Open Sans":"Open Sans",
+        "Helvetica":"Helvetica"
+      },
+      "value":"none"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"code",
+      "name":"entire_page_custom",
+      "label":"\u06a9\u062f \u0633\u0641\u0627\u0631\u0634\u06cc",
+      "value":""
+    }
+  ],
+  "Page Frame":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"page_enable_frame",
+      "label":"page_enable_frame",
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"frame_style",
+      "label":"frame_style",
+      "rel":"page_enable_frame",
+      "target":".wrapper",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_content_style",
+      "label":"main_content_style",
+      "target":".main_content",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_content_container_style",
+      "label":"main_content_container_style",
+      "target":".main_content_container",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"inner_main_content_style",
+      "label":"inner_main_content_style",
+      "target":".inner_main_content",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"code",
+      "name":"page_frame_custom",
+      "label":"\u06a9\u062f \u0633\u0641\u0627\u0631\u0634\u06cc",
+      "value":""
+    }
+  ],
+  "Page Header":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_style",
+      "label":"header_style",
+      "target":"header",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"code",
+      "name":"header_custom",
+      "label":"\u06a9\u062f \u0633\u0641\u0627\u0631\u0634\u06cc",
+      "value":""
+    }
+  ],
+  "Header Top":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"header_top_enable",
+      "label":"header_top_enable",
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_top_style",
+      "label":"header_top_style",
+      "rel":"header_top_enable",
+      "target":"header .header_top",
+      "value":{}
+    },
+
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_top_inner_style",
+      "label":"header_top_inner_style",
+      "rel":"header_top_enable",
+      "target":".header_top_inner",
+      "value":{}
+    },
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_top_link_style",
+      "label":"header_top_link_style",
+      "rel":"header_top_enable",
+      "target":"header .header_top a",
+      "value":{}
+    },
+
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_top_link_hover_style",
+      "label":"header_top_link_hover_style",
+      "rel":"header_top_enable",
+      "target":"header .header_top a:hover",
+      "value":{}
+    },
+
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_top_link_active_style",
+      "label":"header_top_link_active_style",
+      "rel":"header_top_enable",
+      "target":"header .header_top a.active",
+      "value":{}
+    }
+  ],
+  "Header Primary":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_primary_style",
+      "label":"header_primary_style",
+      "target":".header_primary",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"header_primary_inner_style",
+      "label":"header_primary_inner_style",
+      "target":".header_primary_inner",
+      "value":{}
+    }
+  ],
+
+  "Main Menu":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"main_menu_position",
+      "label":"\u0645\u062d\u0644 \u0642\u0631\u0627\u0631\u06af\u06cc\u0631\u06cc \u0645\u0646\u0648\u06cc Main",
+      "option":{
+      	"0":"پنهان",
+        "1":"\u0645\u0648\u0642\u0639\u06cc\u062a 1",
+        "2":"\u0645\u0648\u0642\u0639\u06cc\u062a 2",
+        "3":"\u0645\u0648\u0642\u0639\u06cc\u062a 3"
+      },
+      "value":"2"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"main_menu_align",
+      "label":"main_menu_align",
+      "rel":"main_menu_position",
+      "option":{
+        "left":"\u0686\u067e",
+        "center":"\u0648\u0633\u0637",
+        "right":"\u0631\u0627\u0633\u062a"
+      },
+      "value":"right"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"main_menu_effect",
+      "label":"main_menu_effect",
+      "rel":"main_menu_position",
+      "option":{
+        "fade":"fade",
+        "dropdown":"dropdown"
+      },
+      "value":"fade"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"menu_2_arrow",
+      "label":"menu_2_arrow",
+      "rel":"main_menu_position",
+      "option":{
+      	"none":"پنهان",
+      	"chevron":"Icon 1",
+      	"angle":"Icon 2",
+      	"arrow-circle-o":"Icon 3",
+      	"arrow-circle":"Icon 4",
+      	"arrow":"Icon 5",
+      	"caret-square-o":"Icon 6",
+      	"caret":"Icon 7",
+      	"chevron-circle":"Icon 8",
+      	"angle-double":"Icon 9",
+      	"hand-o":"Icon 10",
+      	"long-arrow":"Icon 11",
+      	"toggle":"Icon 12"
+      },
+      "value":"caret"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"select",
+      "name":"main_menu_link_align",
+      "label":"main_menu_link_align",
+      "rel":"main_menu_position",
+      "option":{
+        "left":"\u0686\u067e",
+        "center":"\u0648\u0633\u0637",
+        "right":"\u0631\u0627\u0633\u062a"
+      },
+      "value":"center"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"yesno",
+      "name":"main_menu_same_width",
+      "label":"main_menu_same_width",
+      "rel":"main_menu_position",
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"yesno",
+      "name":"main_menu_strech_items",
+      "label":"main_menu_strech_items",
+      "rel":"main_menu_position",
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_outer_style",
+      "label":"main_menu_outer_style",
+      "rel":"main_menu_position",
+      "target":".main_menu",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_style",
+      "label":"main_menu_style",
+      "rel":"main_menu_position",
+      "target":".main_menu_inner",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_link_style",
+      "label":"main_menu_link_style",
+      "rel":"main_menu_position",
+      "target":".sf-menu > li > a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_link_hover_style",
+      "label":"main_menu_link_hover_style",
+      "rel":"main_menu_position",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_link_active_style",
+      "label":"main_menu_link_active_style",
+      "rel":"main_menu_position",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_dropdown_style",
+      "label":"main_menu_dropdown_style",
+      "rel":"main_menu_position",
+      "target":".sf-menu ul",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_dropdown_link_style",
+      "label":"main_menu_dropdown_link_style",
+      "rel":"main_menu_position",
+      "target":".sf-menu ul a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_dropdown_link_hover_style",
+      "label":"main_menu_dropdown_link_hover_style",
+      "rel":"main_menu_position",
+      "target":".sf-menu ul a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"main_menu_dropdown_link_active_style",
+      "label":"main_menu_dropdown_link_active_style",
+      "rel":"main_menu_position",
+      "target":"",
+      "value":{}
+    }
+  ],
+  "Sidebar Menu":[
+    {
+      "access":"2",
+      "global":"1",
+      "type":"text",
+      "name":"sidebar_menu_title",
+      "label":"عنوان منوی سایدبار",
+      "value":"صفحه اصلی"
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"sidebar_menu_title_link",
+      "label":"لینک عنوان منوی سایدبار",
+      "value":"/"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"sidebar_menu_type",
+      "label":"\u0646\u0648\u0639 \u0646\u0645\u0627\u06cc\u0634 \u0645\u0646\u0648\u06cc \u0633\u0627\u06cc\u062f\u0628\u0627\u0631",
+      "option":{
+        "dropdown":"\u062f\u0631\u0627\u067e \u062f\u0627\u0646",
+        "simple":"\u0633\u0627\u062f\u0647",
+        "advanced":"\u067e\u06cc\u0634\u0631\u0641\u062a\u0647"
+      },
+      "value":"dropdown"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"menu_3_arrow",
+      "label":"menu_3_arrow",
+      "option":{
+      	"none":"پنهان",
+      	"chevron":"Icon 1",
+      	"angle":"Icon 2",
+      	"arrow-circle-o":"Icon 3",
+      	"arrow-circle":"Icon 4",
+      	"arrow":"Icon 5",
+      	"caret-square-o":"Icon 6",
+      	"caret":"Icon 7",
+      	"chevron-circle":"Icon 8",
+      	"angle-double":"Icon 9",
+      	"hand-o":"Icon 10",
+      	"long-arrow":"Icon 11",
+      	"toggle":"Icon 12"
+      },
+      "value":"caret"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_style",
+      "label":"side_menu_style",
+      "target":".sf-vertical",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_link_style",
+      "label":"side_menu_link_style",
+      "target":".sf-vertical > li > a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_link_hover_style",
+      "label":"side_menu_link_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_link_active_style",
+      "label":"side_menu_link_active_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_dropdown_style",
+      "label":"side_menu_dropdown_style",
+      "target":".sf-vertical ul",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_dropdown_link_style",
+      "label":"side_menu_dropdown_link_style",
+      "target":".sf-vertical ul a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_dropdown_link_hover_style",
+      "label":"side_menu_dropdown_link_hover_style",
+      "target":".sf-vertical ul a",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"side_menu_dropdown_link_active_style",
+      "label":"side_menu_dropdown_link_active_style",
+      "target":"",
+      "value":{}
+    },
+
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"menu_opener_style",
+      "label":"\u0646\u0648\u0639 menu opener",
+      "option":{
+        "plus-sign|minus-sign":"\u0646\u0648\u0639 \u0627\u0648\u0644",
+        "plus|minus":"\u0646\u0648\u0639 \u062f\u0648\u0645",
+        "chevron-align|chevron-down":"\u0646\u0648\u0639 \u0633\u0648\u0645",
+        "arrow-align|arrow-down":"\u0646\u0648\u0639 \u0686\u0647\u0627\u0631\u0645",
+        "circle-arrow-align|circle-arrow-down":"\u0646\u0648\u0639 5",
+      	"chevron-align|chevron-align":"Icon 1",
+      	"angle-align|angle-down":"Icon 2",
+      	"arrow-circle-o-align|arrow-circle-o-down":"Icon 3",
+      	"arrow-circle-align|arrow-circle-down":"Icon 4",
+      	"arrow-align|arrow-down":"Icon 5",
+      	"caret-square-o-align|caret-square-o-down":"Icon 6",
+      	"caret-align|caret-down":"Icon 7",
+      	"chevron-circle-align|chevron-circle-down":"Icon 8",
+      	"angle-double-align|angle-double-down":"Icon 9",
+      	"hand-o-align|hand-o-down":"Icon 10",
+      	"long-arrow-align|long-arrow-down":"Icon 11",
+      	"toggle-align|toggle-down":"Icon 12",
+      	"plus-square|minus-square":"Icon 13",
+      	"plus-square-o|minus-square-o":"Icon 14"
+      },
+      "value":"plus|minus"
+    }
+  ],
+  
+  "footer":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"footer_style",
+      "label":"footer_style",
+      "target":"footer",
+      "value":{
+      	"data":{
+	      	"padding":{
+		      	"top":"10",
+		      	"right":"10",
+		      	"bottom":"10",
+		      	"left":"10"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"footer_inner_style",
+      "label":"footer_inner_style",
+      "target":".footer_inner",
+      "value":{
+      	"data":{},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"footer_menu_link_style",
+      "label":"footer_menu_link_style",
+      "target":"footer .menu_4 li a",
+      "value":{
+      	"data":{
+	      	"padding":{
+		      	"top":"5",
+		      	"right":"12",
+		      	"bottom":"5",
+		      	"left":"12"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"footer_menu_link_hover_style",
+      "label":"footer_menu_link_hover_style",
+      "target":"footer .menu_4 li a:hover",
+      "value":{
+      	"data":{},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"footer_menu_link_active_style",
+      "label":"footer_menu_link_active_style",
+      "target":"footer .menu_4 li a.active",
+      "value":{
+      	"data":{},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"code",
+      "name":"footer_custom",
+      "label":"\u06a9\u062f \u0633\u0641\u0627\u0631\u0634\u06cc",
+      "value":""
+    }
+  ],
+  "Content":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"content_style",
+      "label":"content_style",
+      "target":".content",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"content_header_style",
+      "label":"content_header_style",
+      "target":".content .content_header",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"content_body_style",
+      "label":"content_body_style",
+      "target":".content .content_body",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"options_style",
+      "label":"options_style",
+      "target":".options",
+      "value":{}
+    }
+  ],
+  
+  "Header Slider":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"slider_position",
+      "label":"\u0645\u062d\u0644 \u0642\u0631\u0627\u0631\u06af\u06cc\u0631\u06cc \u0627\u0633\u0644\u0627\u06cc\u062f\u0631",
+      "option":{
+      	"0":"پنهان",
+        "1":"\u0645\u0648\u0642\u0639\u06cc\u062a 1",
+        "2":"\u0645\u0648\u0642\u0639\u06cc\u062a 2",
+        "3":"\u0645\u0648\u0642\u0639\u06cc\u062a 3"
+      },
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"slide_dimension",
+      "name":"slide_dimension",
+      "rel":"slider_position",
+      "value":"920x300"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"slideshow_mode",
+      "label":"slideshow_mode",
+      "rel":"slider_position",
+      "option":{
+        "slider":"slider",
+        "special_product":"Special products",
+        "off_product":"Off products",
+        "new_product":"New product"
+      },
+      "value":"slider"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"slider_style",
+      "label":"slider_style",
+      "rel":"slider_position",
+      "target":"#header_slide",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"number",
+      "name":"slideshow_arrow_size",
+      "label":"slideshow_arrow_size",
+      "rel":"slider_position",
+      "target":"",
+      "value":"30"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"slideshow_arrow",
+      "label":"slideshow_arrow",
+      "rel":"slider_position",
+      "option":{
+      	"0":"پنهان",
+      	"chevron-{dir}":"Icon 1",
+      	"angle-{dir}":"Icon 2",
+      	"arrow-circle-o-{dir}":"Icon 3",
+      	"arrow-circle-{dir}":"Icon 4",
+      	"arrow-{dir}":"Icon 5",
+      	"caret-square-o-{dir}":"Icon 6",
+      	"caret-{dir}":"Icon 7",
+      	"chevron-circle-{dir}":"Icon 8",
+      	"angle-double-{dir}":"Icon 9",
+      	"hand-o-{dir}":"Icon 10",
+      	"long-arrow-{dir}":"Icon 11",
+      	"toggle-{dir}":"Icon 12"
+      },
+      "value":"chevron-{dir}"
+    },
+    
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"slideshow_arrow_style",
+      "label":"slideshow_arrow_style",
+      "rel":"slideshow_arrow",
+      "target":"",
+      "value":""
+ 		},
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"slideshow_arrow_hover_style",
+      "label":"slideshow_arrow_hover_style",
+      "rel":"slideshow_arrow",
+      "target":"",
+      "value":""
+ 		},
+    {
+      "access":"64",
+      "global":"1",
+      "type":"yesno",
+      "name":"slideshow_bullets",
+      "label":"slideshow_bullets",
+      "rel":"slider_position",
+      "value":"0"
+    },
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"number",
+      "name":"slideshow_bullet_size",
+      "label":"slideshow_bullet_size",
+      "rel":"slideshow_bullets",
+      "target":"",
+      "value":"10"
+    },
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"slideshow_bullet_style",
+      "label":"slideshow_bullet_style",
+      "rel":"slideshow_bullets",
+      "target":"",
+      "value":""
+ 		},
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"slideshow_bullet_hover_style",
+      "label":"slideshow_bullet_hover_style",
+      "rel":"slideshow_bullets",
+      "target":"",
+      "value":""
+ 		}
+  ],
+  "Seacrhbox":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"seacrhbox_position",
+      "label":"\u0645\u0648\u0642\u0639\u06cc\u062a Seacrh Box",
+      "option":{
+      	"0":"پنهان",
+        "1":"\u0645\u0648\u0642\u0639\u06cc\u062a 1",
+        "2":"\u0645\u0648\u0642\u0639\u06cc\u062a 2",
+        "3":"\u0645\u0648\u0642\u0639\u06cc\u062a 3"
+      },
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"seacrhbox_style",
+      "label":"seacrhbox_style",
+      "rel":"seacrhbox_position",
+      "target":".search_area",
+      "value":{
+      	"data":{
+	      	"padding":{
+						"right":"15"
+	      	},
+	      	"margin":{
+						"bottom":"15"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"seacrhbox_text_style",
+      "label":"seacrhbox_text_style",
+      "rel":"seacrhbox_position",
+      "target":".search_area input",
+      "value":""
+ 		},
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"seacrhbox_button_style",
+      "label":"seacrhbox_button_style",
+      "rel":"seacrhbox_position",
+      "target":".search_area button",
+      "value":""
+ 		}
+	],
+  "Breadcrumb":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"breadcrumb_position",
+      "label":"\u0645\u0648\u0642\u0639\u06cc\u062a Breadcrumb",
+      "option":{
+      	"0":"پنهان",
+        "1":"\u0645\u0648\u0642\u0639\u06cc\u062a 1",
+        "2":"\u0645\u0648\u0642\u0639\u06cc\u062a 2",
+        "3":"\u0645\u0648\u0642\u0639\u06cc\u062a 3"
+      },
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"breadcrumb_style",
+      "label":"breadcrumb_style",
+      "rel":"breadcrumb_position",
+      "target":".breadcrumb",
+      "value":{
+      	"data":{
+
+	      	"padding":{
+						"right":"15",
+						"left":"15"
+	      	},
+	      	"margin":{
+						"bottom":"15"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"breadcrumb_arrow",
+      "label":"breadcrumb_arrow",
+      "rel":"breadcrumb_position",
+      "option":{
+      	"chevron-{dir}":"Icon 1",
+      	"angle-{dir}":"Icon 2",
+      	"arrow-circle-o-{dir}":"Icon 3",
+      	"arrow-circle-{dir}":"Icon 4",
+      	"arrow-{dir}":"Icon 5",
+      	"caret-square-o-{dir}":"Icon 6",
+      	"caret-{dir}":"Icon 7",
+      	"chevron-circle-{dir}":"Icon 8",
+      	"angle-double-{dir}":"Icon 9",
+      	"hand-o-{dir}":"Icon 10",
+      	"long-arrow-{dir}":"Icon 11",
+      	"toggle-{dir}":"Icon 12"
+      },
+      "value":"chevron-{dir}"
+    }
+  ],
+  "DateTime":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"time_position",
+      "label":"\u0645\u0648\u0642\u0639\u06cc\u062a Time",
+      "option":{
+      	"0":"پنهان",
+        "1":"\u0645\u0648\u0642\u0639\u06cc\u062a 1",
+        "2":"\u0645\u0648\u0642\u0639\u06cc\u062a 2",
+        "3":"\u0645\u0648\u0642\u0639\u06cc\u062a 3"
+      },
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"datetime_style",
+      "label":"datetime_style",
+      "rel":"time_position",
+      "target":".datetime",
+      "value":""
+    }
+  ],
+  "GoTop":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"gotop_position",
+      "label":"محل قرار گیری GoTop",
+      "option":{
+      	"0":"پنهان",
+        "left":"پایین چپ",
+        "right":"پایین راست"
+      },
+      "value":"1"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"gotop_icon",
+      "label":"gotop_icon",
+      "rel":"gotop_position",
+      "option":{
+      	"chevron-up":"Icon 1",
+      	"angle-up":"Icon 2",
+      	"arrow-circle-o-up":"Icon 3",
+      	"arrow-circle-up":"Icon 4",
+      	"arrow-up":"Icon 5",
+      	"caret-square-o-up":"Icon 6",
+      	"caret-up":"Icon 7",
+      	"chevron-circle-up":"Icon 8",
+      	"angle-double-up":"Icon 9",
+      	"hand-o-up":"Icon 10",
+      	"long-arrow-up":"Icon 11",
+      	"toggle-up":"Icon 12"
+      },
+      "value":"chevron-up"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"number",
+      "name":"gotop_size",
+      "label":"gotop_size",
+      "rel":"gotop_position",
+      "target":"",
+      "value":"10"
+    },
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gotop_style",
+      "label":"gotop_style",
+      "rel":"gotop_position",
+      "target":"#gotop a i",
+      "value":{
+      	"data":{
+	      	"padding":{
+	      		"top":"10",
+	      		"right":"10",
+						"bottom":"10",
+						"left":"10"
+	      	},
+	      	"radius":{
+						"topleft":"5",
+						"topright":"5",
+						"bottomright":"5",
+						"bottomleft":"5"
+	      	},
+	      	"background":{
+						"color":"#aaaaaa"
+	      	},
+	      	"text":{
+						"color":"#333333"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gotop_hover_style",
+      "label":"gotop_hover_style",
+      "rel":"gotop_position",
+      "target":"#gotop a:hover i",
+      "value":""
+    }
+  ],
+  "Blocks":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"block_style",
+      "label":"block_style",
+      "target":".block",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"block_header_style",
+      "label":"block_header_style",
+      "target":".block_header",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"block_body_style",
+      "label":"block_body_style",
+      "target":".block_body",
+    	"value":{}
+    }
+  ],
+
+  "Buttons":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"button_style",
+      "label":"button_style",
+      "target":".btn-custom",
+      "value":{
+      	"data":{
+	      	"radius":{
+						"topleft":"5",
+						"topright":"5",
+						"bottomright":"5",
+						"bottomleft":"5"
+	      	},
+	      	"padding":{
+						"top":"5",
+						"right":"10",
+						"bottom":"5",
+						"left":"10"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"button_hover_style",
+      "label":"button_hover_style",
+      "target":".btn-custom:hover",
+      "value":{
+      	"data":{},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"button_active_style",
+      "label":"button_active_style",
+      "target":".btn-custom:focus",
+      "value":{
+      	"data":{},
+      	"css":""
+      }
+    }
+  ],
+  "forms":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"comment_form_style",
+      "label":"comment_form_style",
+      "target":"#box_comment_form",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"comment_title_style",
+      "label":"comment_title_style",
+      "target":".comment_title",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"form_style",
+      "label":"form_style",
+      "target":".form-control",
+      "value":{
+      	"data":{
+	      	"radius":{
+						"topleft":"5",
+						"topright":"5",
+						"bottomright":"5",
+						"bottomleft":"5"
+	      	},
+	      	"padding":{
+						"top":"5",
+						"right":"5",
+						"bottom":"5",
+						"left":"5"
+	      	}
+      	},
+      	"css":""
+      }
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"color",
+      "name":"captcha_text_color",
+      "value":"#000000"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"color",
+      "name":"captcha_noise_color",
+      "value":"#000000"
+    }
+  ],
+
+
+  "Items":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"item_style",
+      "label":"item_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"item_hover_style",
+      "label":"item_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"item_title_style",
+      "label":"item_title_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"item_title_hover_style",
+      "label":"item_title_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"item_image_style",
+      "label":"item_image_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"dimension_thumb",
+      "name":"dimension_thumb",
+      "value":"200x150"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"dimension_normal",
+      "name":"dimension_normal",
+      "value":"320x240"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"dimension_large",
+      "name":"dimension_large",
+      "value":"800x600"
+    }
+  ],
+  
+  "Articles":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"article_item_style",
+      "label":"article_item_style",
+      "target":".content_list",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"article_item_hover_style",
+      "label":"article_item_hover_style",
+      "target":".content_list",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"article_style",
+      "label":"article_style",
+      "target":".article",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"article_header_style",
+      "label":"article_header_style",
+      "target":".article_header",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"article_body_style",
+      "label":"article_body_style",
+      "target":".article_body",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"content_dimension_thumb",
+      "name":"content_dimension_thumb",
+      "value":"200x150"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"content_dimension_normal",
+      "name":"content_dimension_normal",
+      "value":"320x240"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"content_dimension_large",
+      "name":"content_dimension_large",
+      "value":"800x600"
+    }
+  ],
+
+  "Product":[
+
+    
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"product_item_style",
+      "label":"product_item_style",
+      "target":".product_thumb",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"product_item_hover_style",
+      "label":"product_item_hover_style",
+      "target":".product_thumb",
+      "value":{}
+    },
+  
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "name":"product_price_color",
+      "label":"\u0631\u0646\u06af \u0642\u06cc\u0645\u062a \u0645\u062d\u0635\u0648\u0644",
+      "value":"#8fad50"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "name":"product_price_off_color",
+      "label":"\u0631\u0646\u06af \u0642\u06cc\u0645\u062a \u062a\u062e\u0641\u06cc\u0641\u06cc \u0645\u062d\u0635\u0648\u0644",
+      "value":"#ff0000"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "label":"\u0631\u0646\u06af \u0632\u0645\u064a\u0646\u0647 \u0646\u0648\u0627\u0631 \u0628\u0627\u0644\u0627",
+      "name":"navbar_bg_color",
+      "value":"#ffcd18"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "label":"\u0631\u0646\u06af \u0645\u062a\u0646 \u0646\u0648\u0627\u0631 \u0628\u0627\u0644\u0627",
+      "name":"navbar_text_color",
+      "value":"#000000"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "label":"\u0631\u0646\u06af \u0647\u0627\u0648\u0631 \u0645\u0646\u0648 \u062f\u0631 \u0646\u0648\u0627\u0631 \u0628\u0627\u0644\u0627",
+      "name":"navbar_menu_hover_color",
+      "value":"#ffffff"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+      "label":"\u0631\u0646\u06af \u0632\u0645\u06cc\u0646\u0647 \u0647\u0627\u0648\u0631 \u0645\u0646\u0648 \u062f\u0631 \u0646\u0648\u0627\u0631 \u0628\u0627\u0644\u0627",
+      "name":"navbar_menu_bg_hover_color",
+      "value":"#000000"
+    },
+    
+  
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"basket_position",
+      "option":{
+      	"0":"سایدبار",
+      	"2":"موقعیت 1",
+        "1":"موقعیت 2",
+        "3":"موقعیت 3"
+      },
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"basket_style",
+      "label":"basket_style",
+      "target":"#basketbox",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"basket_dropdown_style",
+      "label":"basket_dropdown_style",
+      "target":"#floatbasket",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"float_list_style",
+      "label":"float_list_style",
+      "target":"#basket li",
+      "value":{}
+    },
+    
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"product_dimension_thumb",
+      "name":"product_dimension_thumb",
+      "value":"200x150"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"product_dimension_normal",
+      "name":"product_dimension_normal",
+      "value":"320x240"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"product_dimension_large",
+      "name":"product_dimension_large",
+      "value":"800x600"
+    }
+  ],
+  
+  
+ "Directory":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_item_style",
+      "label":"directory_item_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_item_hover_style",
+      "label":"directory_item_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_item_title_style",
+      "label":"directory_item_title_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_item_title_hover_style",
+      "label":"directory_item_title_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_item_image_style",
+      "label":"directory_item_image_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_header_style",
+      "label":"directory_header_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"directory_body_style",
+      "label":"directory_body_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"ad_dimension_thumb",
+      "name":"ad_dimension_thumb",
+      "value":"200x150"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"ad_dimension_normal",
+      "name":"ad_dimension_normal",
+      "value":"320x240"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"ad_dimension_large",
+      "name":"ad_dimension_large",
+      "value":"800x600"
+    }
+  ],
+  
+  
+ "Gallery":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gallery_item_style",
+      "label":"gallery_item_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gallery_item_hover_style",
+      "label":"gallery_item_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gallery_item_title_style",
+      "label":"gallery_item_title_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gallery_item_title_hover_style",
+      "label":"gallery_item_title_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"gallery_item_image_style",
+      "label":"gallery_item_image_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"gallery_dimension_thumb",
+      "name":"gallery_dimension_thumb",
+      "value":"200x150"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"gallery_dimension_normal",
+      "name":"gallery_dimension_normal",
+      "value":"320x240"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"gallery_dimension_large",
+      "name":"gallery_dimension_large",
+      "value":"800x600"
+    }
+  ],
+ "Media":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"media_item_style",
+      "label":"media_item_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"media_item_hover_style",
+      "label":"media_item_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"media_item_title_style",
+      "label":"media_item_title_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"media_item_title_hover_style",
+      "label":"media_item_title_hover_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"media_item_image_style",
+      "label":"media_item_image_style",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"media_dimension_thumb",
+      "name":"media_dimension_thumb",
+      "value":"200x150"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"media_dimension_normal",
+      "name":"media_dimension_normal",
+      "value":"320x240"
+    },
+    {
+      "access":"64",
+      "global":"1",
+      "type":"dimension",
+      "label":"media_dimension_large",
+      "name":"media_dimension_large",
+      "value":"800x600"
+    }
+  ],
+  
+  "forum":[
+    {
+      "access":"64",
+      "global":"0",
+      "type":"color",
+    	"code":"2117",
+      "label":"\u0631\u0646\u06af \u0627\u0646\u062c\u0645\u0646",
+      "name":"forum_color",
+      "value":"#43a6df"
+    }
+  ],
+	"Social Icons":[
+    {
+      "access":"64",
+      "global":"1",
+      "type":"select",
+      "name":"social_position",
+      "label":"social icon position",
+      "option":{
+        "0":"پنهان",
+        "1":"موقعیت 1",
+        "2":"موقعیت 2",
+        "3":"موقعیت 3",
+        "4":"موقعیت 4"
+      },
+      "value":"0"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"social_style",
+     	"label":"استایل مربوط به باکس social",
+     	"rel":"social_position",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"number",
+      "name":"social_item_size",
+      "label":"سایز آیکون",
+      "rel":"social_position",
+      "value":"20"
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"social_item_style",
+    	"label":"استایل آیکون ها",
+     	"rel":"social_position",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"64",
+      "global":"0",
+      "type":"style",
+      "name":"social_item_hover_style",
+      "label":"استایل هاور آیکون ها",
+      "rel":"social_position",
+      "target":"",
+      "value":{}
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"telegram_icon",
+      "label":"آدرس صفحه یا کانال تلگرام",
+      "rel":"social_position",
+      "help":"https://telegram.me/yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"instagram_icon",
+      "label":"آدرس صفحه اینستاگرام",
+      "rel":"social_position",
+      "help":"http://instagram.com/yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"facebook_icon",
+      "label":"آدرس صفحه فیسبوک",
+      "rel":"social_position",
+      "help":"http://www.facebook.com/yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"google_plus_icon",
+      "label":"آدرس صفحه گوگل پلاس",
+      "rel":"social_position",
+      "help":"http://plus.google.com/+yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"twitter_icon",
+      "label":"آدرس صفحه توییتر",
+      "rel":"social_position",
+      "help":"http://twitter.com/yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"youtube_icon",
+      "label":"آدرس صفحه یوتیوب",
+      "rel":"social_position",
+      "help":"http://www.youtube.com/yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"linkedin_icon",
+      "label":"آدرس صفحه لینکداین",
+      "rel":"social_position",
+      "help":"http://www.linkedin.com/yourname",
+      "value":""
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"rss_icon",
+      "label":"rss_icon",
+      "rel":"social_position",
+      "help":"آدرس صفحه فید",
+      "value":"/feed"
+    },
+    {
+      "access":"2",
+      "global":"1",
+      "type":"textleft",
+      "name":"email_icon",
+      "label":"email_icon",
+      "help":"پست الکترونیک",
+      "rel":"social_position",
+      "value":"mailto:yourname@yoursite.com"
+    }          
+  ],
+  "Custom CSS":[
+	{
+		"access":"2",
+		"global":"0",
+		"type":"code_editor",
+		"sides":"1",
+		"name":"custom_code",
+		"label":"custom_code",
+		"value":""
+	}
+  ]
+  
+}

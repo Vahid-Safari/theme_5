@@ -1,0 +1,23 @@
+.block{
+	overflow:hidden;
+	{if="$sidebar_menu_type=='dropdown'"}
+		#box_block_menu & {
+			overflow:visible;
+		}
+	{/if}
+	{$block_style[css]}
+	.block_header{
+		{$block_header_style[css]}
+		overflow: hidden;
+		h3{
+			font:@font_weight 18px/36px Font1,Arial;
+			a{
+				color:{$block_header_style[text][color]}
+			}
+		}
+	}
+	.block_body{
+		{$block_body_style[css]}
+		#box_block_menu & {padding:0;}
+	}
+}

@@ -1,0 +1,261 @@
+
+/* SlideShow */
+#header_slide{
+	overflow: hidden;
+	{$slider_style[css]}
+}
+
+{if="$slideshow_mode=='slider'"}
+.slider-wrapper{
+} 
+.slider img{
+	width:100%;
+}
+.nivoSlider {
+	position:relative;
+	overflow: hidden;
+	img {
+		position:absolute;
+		top:0px;
+		{$xalign}:0px;
+		max-width: none!important;
+		width:100%;
+	}
+	a.nivo-imageLink {
+		position:absolute;
+		top:0px;
+		{$xalign}:0px;
+		width:100%;
+		height:100%;
+		border:0;
+		padding:0;
+		margin:0;
+		z-index:6;
+		display:none;
+		background:white;
+		filter:alpha(opacity=0);
+		opacity:0;
+	}
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important;
+	width:100%;
+}
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+	img {
+		display:block;
+	}
+}
+.nivo-caption {
+	position:absolute;
+	{$xalign}:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	opacity: 0.8;
+	box-sizing: border-box;
+	p {
+		padding:5px;
+		margin:0;
+	}
+	a {
+		display:inline !important;
+	}
+}
+.nivo-html-caption {
+	display:block;
+}
+.nivo-prevNav {
+	{$align}:0px;
+}
+.nivo-nextNav {
+	{$xalign}:0px;
+}
+.nivo-controlNav {
+	a {
+		cursor:pointer;
+		&.active {
+			font-weight:bold;
+		}
+	}
+}
+.theme-light{
+	position: relative;
+	.nivoSlider {
+		position:relative;
+		background: transparent url({$global_url}images/nivo/light/loading.gif) no-repeat 50% 50%;
+		overflow: hidden;
+		img {
+			position:absolute;
+			top:0px;
+			{$xalign}:0px;
+			display:none;
+		}
+		a {
+			border:0;
+			display:block;
+		}
+	}
+	
+	.nivo-controlNav {
+	  text-align: center;
+	  z-index: 9;
+	  position: absolute;
+	  padding: 15px 10px;
+	  margin: auto;
+	  bottom: 0;
+	  right: 0;
+	  left: 0;
+		a {
+			display:inline-block;
+			width: {$slideshow_bullet_size}px;
+			line-height: 1;
+			font-size:  {$slideshow_bullet_size}px;
+			box-sizing: content-box;
+			background-color: #c9c9c9;
+			{$slideshow_bullet_style[css]}
+			&:hover, &.active{
+				background-color: #a8a8a8;
+				{$slideshow_bullet_hover_style[css]}
+			}
+		}
+		&.nivo-thumbs-enabled {
+			width: 80%;
+			a {
+				width: auto;
+				height: auto;
+				background: none;
+				margin-bottom: 5px;
+			}
+			img {
+				display: block;
+				width: 120px;
+				height: auto;
+			}
+		}
+	}
+	.nivo-directionNav a {
+		text-align: center;
+		position: absolute;
+		z-index: 11;
+		cursor: pointer;
+		bottom: 20px;		
+		display:block;		
+		width: {$slideshow_arrow_size}px;
+		line-height: 1;
+		box-sizing: content-box;
+		{$slideshow_arrow_style[css]}
+		font-size: {$slideshow_arrow_size}px;
+		i{
+			
+		}
+		&:hover {
+			{$slideshow_arrow_hover_style[css]}
+		}
+	}
+	.nivo-nextNav {
+		{$xalign}: 20px;
+	}
+	.nivo-prevNav {
+		{$xalign}: auto;
+		{$align}: 20px;
+	}
+	
+	.nivo-caption {
+		font-family: Font1;
+		a {
+			color:#fff;
+			border-bottom:1px dotted #fff;
+			&:hover {
+				color:#fff;
+			}
+		}
+		
+	}
+
+}
+{else}
+.product-slider.owl-theme{
+	 .owl-item{
+		 	.product-slider-image{
+				display: block;
+				padding: 0;
+				img{
+					width: 100%;
+				}		 		
+		 	}	
+	 }
+	 .owl-controls{
+		 	.owl-pagination{
+			 	 .owl-page{
+			 	 		span{
+			 	 			opacity: 1;
+			 	 			border-radius:0;
+			 	 			margin: 0;
+			 	 			{$slideshow_bullet_style[css]}
+			 	 			
+			 	 		}
+						&:hover, &.active{
+				 	 			span{
+				 	 				{$slideshow_bullet_hover_style[css]}		
+				 	 			}				
+						}	 	 		
+			 	 }		
+		 	}
+		 	.owl-buttons{
+		 		div{
+					width: {$slideshow_arrow_size}px;
+					line-height: 1;
+					box-sizing: content-box;		
+					font-size: {$slideshow_arrow_size}px;
+					i{
+						
+					}
+		 			{$slideshow_arrow_style[css]}
+		 			&:hover{
+		 				{$slideshow_arrow_hover_style[css]}
+		 			}
+		 		}
+		 	}
+	 }	 
+	 .product-slider-caption{
+		 	padding: 15px 15px 0;
+		 	.slidehead{
+		 		display: block;
+		 		color: #807c7c;
+		 	}
+		 	.slide-subtitle{
+		 		padding: 10px 0;
+		 		.slide-subtitle
+		 	}
+		 	.product-price{
+		 		font: normal 18px/28px Font1, Arial;
+		 		.old_price{
+		 			color: #f00;
+		 			text-decoration: line-through;
+		 		}
+		 	}
+		 	.btn-custom{
+		 		margin-top: 10px;
+		 	}
+	 }
+}	 
+{/if}

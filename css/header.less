@@ -1,0 +1,116 @@
+header{
+	{$header_style[css]}
+	{if="$header_top_enable"}
+	.header_top{
+		{$header_top_style[css]}
+		.menu_1 a{
+			{$header_top_link_style[css]}
+			float: {$align};
+			display: block;
+			&:hover{
+				{$header_top_link_hover_style[css]}
+			}
+			&:active,&.active{
+				{$header_top_link_active_style[css]}
+			}
+		}
+		.header_top_inner{
+			{$header_top_inner_style[css]}
+		}
+	}
+	{/if}
+	.header_primary{
+		{$header_primary_style[css]}
+		.header_primary_inner{
+			{$header_primary_inner_style[css]}
+			.header_logo{
+				display: block;
+				{if="$logo_align=='center'"}
+					float:none;
+				{else}
+					height:{$logo_dimension[y]}px;
+					float:{$logo_align};
+				{/if}
+				{if="$logo"}
+					background:url({$logo}) top {$logo_align} no-repeat;
+					{if="$logo_align=='center'"}
+						padding-top:{$logo_dimension[y]+10}px;
+					{else}
+						padding-{$logo_align}:{$logo_dimension[x]+10}px;
+					{/if}
+				{/if}
+				{if="$show_logo_title"}
+					h1,h2{
+						text-align:{$logo_align};
+						color:{$header_primary_logo_color};
+						&:hover{
+								color:{$header_primary_logo_hover_color};
+						}
+					}
+					h1{
+						font:@font_weight 40px/{$logo_dimension[y]*0.5}px Font1,Arial;
+					}
+					h2{
+						font:@font_weight 24px/{$logo_dimension[y]*0.5}px Font1,Arial;
+					}
+					
+				{else}
+					h1, h2{
+						display:none;
+					}
+				{/if}
+			}
+		}
+	}
+
+	{if="$header_custom"}
+		{$header_custom}
+	{/if}
+}
+
+{if="$enable_responsive"}
+
+@media (max-width: 767px) {
+header{
+	width:100%;
+	text-align: center;
+	.header_top{
+		.header_top_inner{
+			.menu_1{
+				float: none;
+				li{
+					float: none;
+					display: inline-block;
+				}	
+			}
+			.datetime{
+				float: none;
+				margin: 12px;
+			}
+		}
+	}
+	.header_primary{
+		.header_primary_inner{
+			.header_logo{
+				height:auto;
+				float: none;
+				{if="$logo"}
+					background-position:top;
+					padding-{$align}:0;
+					padding-top:{$logo_dimension[y]}px;
+				{/if}
+				{if="$show_logo_title"}
+					h1, h2{
+						float: none;
+						clear:both;
+						text-align:center;
+					}
+				{/if}
+			}
+		}
+	}
+
+}
+}
+
+{/if}

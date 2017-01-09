@@ -1,0 +1,155 @@
+{
+	"چهار باکس":[
+	{
+		"type":"server_file",
+		"name":"box4_icon_1",
+		"label":"اولین تصویر باکس چهارتایی",
+		"value":"",
+		"help":"بهترین سایز برای تصویر این باکس 50*50 پیکسل می باشد"
+	},
+	{
+		"type":"text",
+		"name":"four_box_title_1",
+		"label":"اولین تیتر باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"text",
+		"name":"four_box_text_1",
+		"label":"اولین متن باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"server_file",
+		"name":"box4_icon_2",
+		"label":"دومین تصویر باکس چهارتایی",
+		"value":"",
+		"help":"بهترین سایز برای تصویر این باکس 50*50 پیکسل می باشد"
+	},
+	{
+		"type":"text",
+		"name":"four_box_title_2",
+		"label":"دومین تیتر باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"text",
+		"name":"four_box_text_2",
+		"label":"دومین متن باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"server_file",
+		"name":"box4_icon_3",
+		"label":"سومین تصویر باکس چهارتایی",
+		"value":"",
+		"help":"بهترین سایز برای تصویر این باکس 50*50 پیکسل می باشد"
+	},
+	{
+		"type":"text",
+		"name":"four_box_title_3",
+		"label":"سومین تیتر باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"text",
+		"name":"four_box_text_3",
+		"label":"سومین متن باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"server_file",
+		"name":"box4_icon_4",
+		"label":"چهارمین تصویر باکس چهارتایی",
+		"value":"",
+		"help":"بهترین سایز برای تصویر این باکس 50*50 پیکسل می باشد"
+	},
+	{
+		"type":"text",
+		"name":"four_box_title_4",
+		"label":"چهارمین تیتر باکس چهارتایی",
+		"value":""
+	},
+	{
+		"type":"text",
+		"name":"four_box_text_4",
+		"label":"چهارمین متن باکس چهارتایی",
+		"value":""
+	}
+	],
+	"سه باکس":[
+	{
+		"type":"server_file",
+		"name":"box3_image_1",
+		"label":"عکس باکس 1",
+		"value":""
+	},
+	{
+		"type":"editor",
+		"name":"box3_text_1",
+		"label":"متن باکس 1",
+		"value":""
+	},
+	{
+		"type":"textleft",
+		"name":"box3_link_1",
+		"label":"لینک باکس 1",
+		"value":""
+	},
+	{
+		"type":"textleft",
+		"name":"box3_cols_1",
+		"label":"چیدمان باکس 1",
+		"value":"col-lg-3 col-md-3 col-sm-12 col-sx-12 "
+	},
+	{
+		"type":"server_file",
+		"name":"box3_image_2",
+		"label":"عکس باکس 2",
+		"value":""
+	},
+	{
+		"type":"editor",
+		"name":"box3_text_2",
+		"label":"متن باکس 2",
+		"value":""
+	},
+	{
+		"type":"textleft",
+		"name":"box3_link_2",
+		"label":"لینک باکس 2",
+		"value":""
+	},
+	{
+		"type":"textleft",
+		"name":"box3_cols_2",
+		"label":"چیدمان باکس 2",
+		"value":"col-lg-6 col-md-6 col-sm-12 col-sx-12 "
+	},
+
+	{
+		"type":"server_file",
+		"name":"box3_image_3",
+		"label":"عکس باکس 3",
+		"value":""
+	},
+	{
+		"type":"editor",
+		"name":"box3_text_3",
+		"label":"متن باکس 1",
+		"value":""
+	},
+	{
+		"type":"textleft",
+		"name":"box3_link_3",
+		"label":"لینک باکس 3",
+		"value":""
+	},
+	{
+		"type":"textleft",
+		"name":"box3_cols_3",
+		"label":"چیدمان باکس 3",
+		"value":"col-lg-3 col-md-3 col-sm-12 col-sx-12 "
+	}
+	]
+}

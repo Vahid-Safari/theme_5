@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Secure</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ketab.Digital-Home-3" transform="translate(-1134.000000, -683.000000)" stroke="#7DC855" stroke-width="2">
+            <g id="Feature-2" transform="translate(0.000000, 627.000000)">
+                <g id="4" transform="translate(1135.000000, 40.000000)">
+                    <g id="Secure" transform="translate(0.000000, 17.000000)">
+                        <rect id="Rectangle-path" x="0" y="12.6315789" width="30" height="23.6842105"></rect>
+                        <path d="M25.9421053,12.6315789 C26.0150838,12.1084175 26.0520129,11.5808582 26.0526316,11.0526316 C26.0526315,4.94843178 21.1041998,1.64696985e-07 15,1.64696985e-07 C8.8958002,1.64696985e-07 3.94736851,4.94843178 3.94736842,11.0526316 C3.94798707,11.5808582 3.98491623,12.1084175 4.05789474,12.6315789 L25.9421053,12.6315789 L25.9421053,12.6315789 Z" id="Shape"></path>
+                        <path d="M16.5789474,27.6315789 L16.5789474,33.1578947 L13.4210526,33.1578947 L13.4210526,27.6315789 C12.1832589,26.9169384 11.5797828,25.4600181 11.9497079,24.0794386 C12.3196331,22.6988591 13.5707189,21.7388671 15,21.7388671 C16.4292811,21.7388671 17.6803669,22.6988591 18.0502921,24.0794386 C18.4202172,25.4600181 17.8167411,26.9169384 16.5789474,27.6315789 L16.5789474,27.6315789 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

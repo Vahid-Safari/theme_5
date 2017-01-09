@@ -1,0 +1,118 @@
+{
+    "theme setting":[
+	    {
+	      "access":"64",
+	      "global":"0",    
+	      "type":"color",
+	      "name":"background_color",
+	      "label":"تغییر رنگ زمینه سایت",
+	      "value":"#fafbfb"
+	    },    
+	    {
+	      "access":"64",
+	      "global":"0",    
+	      "type":"color",
+	      "name":"red_color",
+	      "label":"تغییر رنگ آیتمهای قرمز به هر رنگ دلخواه",
+	      "value":"#e74c3c"
+	    },
+	    {
+	      "access":"64",
+	      "global":"0",    
+	      "type":"color",
+	      "name":"black_color",
+	      "label":"تغییر رنگ آیتمهای تیره به هر رنگ دلخواه",
+	      "value":"#323a45"
+	    },	        
+     {
+      "type":"text",
+      "name":"header_title",
+      "label":"متن هدر سایت",
+      "value":""
+     },
+     {
+      "type":"server_file",
+      "name":"slider_left_img_1",
+      "label":"تصویر کنار اسلایدر ، بالا",
+      "value":"",
+      "help":"بهترین سایز برای تصویر این باکس 180*270 پیکسل می باشد"      
+     },
+     {
+      "type":"textleft",
+      "name":"slider_left_link_1",
+      "label":"لینک تصویر کنار اسلایدر ، بالا",
+      "value":""
+     },
+     {
+      "type":"server_file",
+      "name":"slider_left_img_2",
+      "label":"تصویر کنار اسلایدر ، پایین",
+      "value":"",
+      "help":"بهترین سایز برای تصویر این باکس 180*270 پیکسل می باشد"      
+     },
+     {
+      "type":"textleft",
+      "name":"slider_left_link_2",
+      "label":"لینک تصویر کنار اسلایدر ، پایین",
+      "value":""
+     },
+     {
+      "type":"server_file",
+      "name":"two_box_img_1",
+      "label":"باکس پایین اسلایدر ، تصویر سمت راست",
+      "value":"",
+      "help":"بهترین سایز برای تصویر این باکس 300*800 پیکسل می باشد"      
+     },
+     {
+      "type":"textleft",
+      "name":"two_box_link_1",
+      "label":"باکس پایین اسلایدر ، لینک تصویر راست",
+      "value":""
+     },
+     {
+      "type":"server_file",
+      "name":"two_box_img_2",
+      "label":"باکس پایین اسلایدر ، تصویر سمت چپ",
+      "value":"",
+      "help":"بهترین سایز برای تصویر این باکس 300*800 پیکسل می باشد"      
+     },
+     {
+      "type":"textleft",
+      "name":"two_box_link_2",
+      "label":"باکس پایین اسلایدر ، لینک تصویر چپ",
+      "value":""
+     },
+     {
+      "type":"server_file",
+      "name":"two_box_home_center_img_1",
+      "label":"باکس وسط صفحه اول ، تصویر سمت راست",
+      "value":"",
+      "help":"بهترین سایز برای تصویر این باکس 300*600 پیکسل می باشد"      
+     },
+     {
+      "type":"textleft",
+      "name":"two_box_home_center_link_1",
+      "label":"باکس وسط صفحه اول ، لینک تصویر راست",
+      "value":""
+     },
+     {
+      "type":"server_file",
+      "name":"two_box_home_center_img_2",
+      "label":"باکس وسط صفحه اول ، تصویر سمت چپ",
+      "value":"",
+      "help":"بهترین سایز برای تصویر این باکس 300*600 پیکسل می باشد"      
+     },
+     {
+      "type":"textleft",
+      "name":"two_box_home_center_link_2",
+      "label":"باکس وسط صفحه اول ، لینک تصویر چپ",
+      "value":""
+     },
+     {
+      "type":"code",
+      "name":"footer_custom_code",
+      "label":"کد قابل نمایش در فوتر",
+      "value":""
+     }                                
+    ]    
+}

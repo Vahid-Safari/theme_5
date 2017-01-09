@@ -1,0 +1,161 @@
+.content_media  {
+	.media_video,.media_photo{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	}
+} 
+.content_header .media_info{
+	float:{$xalign};
+	font:{$font_weight} 14px/30px Font1,Arial;
+	width:180px;
+}
+
+.media_thumb{
+	padding: 0;
+	position: relative;
+	float: {$align};
+	display: block;
+	.thumb_body{
+		{$media_item_style[css]}
+		overflow: hidden;
+		text-align: center;
+		a.media_image{
+			display:block;
+			/*min-height:200px;	*/
+			img{
+				width:100%;
+				height:auto;
+				opacity:1;
+				{$media_item_image_style[css]}
+			}
+		}
+		h3{
+
+		}
+		&:hover{
+			{$media_item_hover_style[css]}
+		}
+
+	a h3{
+			height: 48px;
+			font:{$font_weight} 14px/16px Font1,Arial;
+			overflow: hidden;
+			margin-top: 10px;
+			display: block;
+			{$media_item_title_style[css]}
+
+	}
+	a:hover h3{
+		{$media_item_title_hover_style[css]}
+	}
+	
+		.media_icon {
+			font-size: 15px;
+			position: absolute;
+			{$xalign}: 25px;
+			top: 20px;
+			color: #fff;
+			display: block;
+			opacity: 0.5;
+			text-shadow: 1px 1px 1px #888;
+		}
+		.media_info{
+			padding: 0 10px;
+			color: #757575;
+			font:{$font_weight} 14px/30px Font1,Arial;
+			a{
+				float: {$xalign};
+				text-align: {$xalign};
+				direction: ltr;
+				padding-{$align}:40px;
+				&:last-child{
+					padding-{$align}:0;
+					float: {$align};
+				}
+				strong{
+					padding-{$xalign}: 5px;
+				}
+			}
+			span, strong{
+				font-size: 16px;
+			}
+		}
+		
+		
+	}
+
+}
+/*
+._media_thumbs{
+	.media_thumb{
+		text-align: center;
+		overflow: hidden;
+		padding:0;
+		.thumb_body{
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+			{$item_style[css]}
+			&:hover{
+				{$item_hover_style[css]}
+				a h3{
+				}
+			}
+			a.imagelink{
+				display:block;
+				min-height:200px;	
+			}
+		}
+		
+		.media_icon {
+			font-size: 15px;
+			position: absolute;
+			{$xalign}: 15px;
+			top: 10px;
+			color: #fff;
+			display: block;
+			opacity: 0.5;
+			text-shadow: 1px 1px 1px #888;
+		}
+		.media_info{
+
+			padding: 0 10px;
+			color: #757575;
+			font:{$font_weight} 14px/30px Font1,Arial;
+			a{
+				float: {$xalign};
+				text-align: {$xalign};
+				direction: ltr;
+				padding-{$align}:40px;
+				&:last-child{
+					padding-{$align}:0;
+					float: {$align};
+				}
+				strong{
+					padding-{$xalign}: 5px;
+				}
+			}
+			span, strong{
+				font-size: 16px;
+			}
+		}
+		
+		img{
+			width:100%;
+			height:auto;
+		}
+		h3{
+			display:block;
+			padding: 10px 10px 0px;
+			font:{$font_weight} 14px/20px Font1,Arial;
+			overflow: hidden;
+		}
+		.caption{
+		}
+		.media_image{
+			display:block;
+		}
+	}
+}
+*/

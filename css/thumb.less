@@ -1,0 +1,41 @@
+
+.page_thumb{
+	padding: 0;
+	position: relative;
+	display: block;
+	.thumb_body{
+		{$item_style[css]}
+		overflow: hidden;
+		text-align: center;
+		a.page_thumb_image{
+			display:block;
+			img{
+				width:100%;
+				height:auto;
+				opacity:1;
+			}
+		}
+		a.page_thumb_link{
+			display: block;
+			h3{
+				height: 32px;
+				font:{$font_weight} 14px/16px Font1,Arial;
+				overflow: hidden;
+				{$item_title_style[css]}
+			}
+			&:hover{
+				h3{
+					{$item_title_hover_style[css]}
+				}
+			}
+		}
+		&:hover{
+			{$item_hover_style[css]}
+			a h3{
+				{if="$item_hover_style[text][color]!='transparent'"}
+				color:{$item_hover_style[text][color]};
+				{/if}
+			}
+		}
+	}
+}

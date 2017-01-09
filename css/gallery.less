@@ -1,0 +1,85 @@
+/* Module: Gallery */
+.gallery li{
+	position:relative;
+	float:{$align};
+	text-align: right;
+	display:block;
+	overflow:hidden;
+	padding:0;
+	.item_body{
+		{$gallery_item_style[css]}
+		&:hover{
+			{$gallery_item_hover_style[css]}
+		}
+		span{
+			overflow: hidden;
+			height: 60px;
+			display: block;
+			line-height: 20px;
+		}
+	}
+	a{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		img{
+			width: 100%;
+			{$gallery_item_image_style[css]}
+		}
+	}
+	h3{
+		display:block;
+		font:{$font_weight} 16px/20px Font1,Arial;
+		height: 40px;
+		overflow: hidden;
+		{$gallery_item_title_style[css]}
+		&:hover{
+			{$gallery_item_title_hover_style[css]}
+		}
+	}
+}
+/*.thumb{
+	position:relative;
+	float:{$align};
+	text-align:center;
+	display:block;
+	overflow:hidden;
+	padding:0;
+	.thumb_body{
+		{$item_style[css]}
+		&:hover{
+			{$item_hover_style[css]}
+		}
+	}
+	a{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		img{
+			width: 100%;
+			{$item_image_style[css]}
+		}
+	}
+	h3{
+		display:block;
+		font:{$font_weight} 14px/20px Font1,Arial;
+		height: 60px;
+		overflow: hidden;
+		{$item_title_style[css]}
+		&:hover{
+			{$item_title_hover_style[css]}
+		}
+	}
+	.new_cutoff{
+		float:{$xalign};
+		position: absolute;
+		width:48px;
+		height:48px;
+		{$xalign}:0px;
+		top:0px;
+		z-index: 999;
+		background:url('{$global_url}images/badge_new.png') no-repeat;
+	}
+}*/

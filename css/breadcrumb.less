@@ -1,0 +1,24 @@
+.breadcrumb{
+	font:@font_weight 18px Font1,Arial;
+	text-align:{$align};
+	overflow: hidden;
+	{$breadcrumb_style[css]}
+	.fa{/*span.glyphicon-home*/
+		font-size: 18px;
+	}
+	a{
+		display: inline-block;
+		color:{$breadcrumb_style[text][color]};
+		span{
+			top: 3px;
+		}
+	}
+	.nav-arrow{
+		margin: 0 10px ;
+		font-size:0.8em; 
+		line-height:1;
+	}
+	.page_home & {
+		display: none;
+	}
+}
