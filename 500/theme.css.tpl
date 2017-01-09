@@ -632,17 +632,17 @@ color:#fff;
 
 
 	#basket_info{
-		.glyphicon{
+		.fa{
 			top: 4px;
 		}
 		#basket_items_box{
 			display: block;
 			float: left;
 
-			span.glyphicon{
+			span.fa{
 			}
 		}
-		>span.glyphicon{
+		>span.fa{
 		}
 	}
 	#floatbasket{

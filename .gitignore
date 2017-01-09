@@ -1,2 +1,9 @@
 
 config.*.json
+theme.css.php
+theme.rtl.less
+theme.ltr.less
+theme.*.ltr.css
+theme.*.rtl.css
+theme.ltr.css
+theme.rtl.css

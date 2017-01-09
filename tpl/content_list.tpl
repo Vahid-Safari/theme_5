@@ -14,7 +14,7 @@
 	{/if}
 		<div class='content_excerpt col-ms-12'>
 			<a href='{$value.link}' itemprop="name"><h3>{$value.title}</h3></a>
-			<time class='content_date'><i class='glyphicon glyphicon-calendar'></i> {$value.date}</time>
+			<time class='content_date'><i class='fa fa-calendar'></i> {$value.date}</time>
 			<p itemprop="description">{$value.text}</p>
 			<a class='btn btn-custom more_content' href='{$value.link}'>{$value.more}</a>
 		</div>

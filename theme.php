@@ -5,14 +5,14 @@ if(!function_exists("install_theme_5")){
 function install_theme_5()
 {
 	global $_, $_db, $lang;
-	
+
 }}
 
 if(!function_exists("uninstall_theme_5")){
 function uninstall_theme_5()
 {
 	global $_, $_db, $lang;
-	
+
 }}
 
 if(!function_exists("config_theme_5")){
@@ -22,10 +22,10 @@ function config_theme_5()
 	$_['theme_version'] = "3";
 //	$_['jquery_version'] = "";
 //	$_['bootstrap_version']='3';
-	
+
 	$_['jquery_version']='3.1.1';
 	$_['bootstrap_version']='3.3.4';
-	
+
 	$_['float_basket'] = '';
 	$_['ads'] = "";
 	$_['breadcrumb']= "";
@@ -38,8 +38,8 @@ function config_theme_5()
 	if(!isset($_['social_position']))
 		$_['social_position'] = 0;
 	if(!isset($_['menu_2_arrow']))
-		$_['menu_2_arrow'] = $_['menu_3_arrow'] = "caret";	
-	
+		$_['menu_2_arrow'] = $_['menu_3_arrow'] = "caret";
+
 }}
 
 if(!function_exists("start_theme_5")){
@@ -47,7 +47,7 @@ function start_theme_5()
 {
 	global $_, $_db, $lang;
 
-	
+
 }}
 
 if(!function_exists("end_theme_5")){
@@ -59,8 +59,8 @@ function end_theme_5()
 
 	make_all_menu();
 	$_['path_array'][0]="<a href='$_[home_link]'><span class='fa fa-home'></span></a>";
-	$breadcrumb_arrow = (isset($_['breadcrumb_arrow'])) ? "fa fa-".str_replace("{dir}","$lang[alignx]",$_['breadcrumb_arrow']):"glyphicon glyphicon-chevron-$lang[alignx]";
-	$_['breadcrumb'] = implode(" <span class='nav-arrow $breadcrumb_arrow'></span> ", $_['path_array']);	
+	$breadcrumb_arrow = (isset($_['breadcrumb_arrow'])) ? "fa fa-".str_replace("{dir}","$lang[alignx]",$_['breadcrumb_arrow']):"fa fa-chevron-$lang[alignx]";
+	$_['breadcrumb'] = implode(" <span class='nav-arrow $breadcrumb_arrow'></span> ", $_['path_array']);
 	$_['outer_container'] = ($_['page_enable_frame']) ? "container":"not_container";
 	$_['inner_container'] = ($_['page_enable_frame']) ? "not_container":"container";
 	if(!$_['enable_responsive'])
@@ -68,7 +68,7 @@ function end_theme_5()
 
 
 	$_['browser_support'] = "<div id='browser_support'>
-شما از نسخه قدیمی این مرورگر استفاده میکنید. این نسخه دارای مشکلات امنیتی بسیاری است و نمی تواند تمامی ویژگی های این وبسایت و دیگر وبسایت ها را به خوبی نمایش دهد. 
+شما از نسخه قدیمی این مرورگر استفاده میکنید. این نسخه دارای مشکلات امنیتی بسیاری است و نمی تواند تمامی ویژگی های این وبسایت و دیگر وبسایت ها را به خوبی نمایش دهد.
 <br/>
 <a href='https://browser-update.org/fa/update.html'><b>جهت دریافت اطلاعات بیشتر در زمینه به روز رسانی مرورگر اینجا کلیک کنید.</b></a>
 </div>";
@@ -102,14 +102,14 @@ var _gaq = _gaq || [];
 		"rss" => "rss",
 		"email" => "envelope"
 	);
-	
-	$icons="";	
+
+	$icons="";
 	foreach($socials as $key => $value)
 	{
 		if(isset($_["$key"."_icon"]) and $_["$key"."_icon"])
 			$icons .="<li><a target='_blank' href='".$_[$key."_icon"]."' class='icon-social icon-$key'><i class='fa fa-$value'></i></a></li>";
 	}
-	
+
 	$_['social_icons'] = ($icons) ? "<ul class='social'>$icons</ul>":"";
 	load_css('fontawesome');
 	//load_javascript("jquery.migrate3.0.0");
@@ -117,10 +117,10 @@ var _gaq = _gaq || [];
 	load_javascript("bootstrap.dialog");
 	load_css("bootstrap.dialog");
 	load_block('custom');
-	
-	
+
+
 	//** SMOOTHSCROLL
-	if(isset($_['enable_smoothscroll']) and $_['enable_smoothscroll']) 
+	if(isset($_['enable_smoothscroll']) and $_['enable_smoothscroll'])
 	{
 		load_javascript("jquery.mousewheel");
 		load_javascript("jquery.smoothscroll");
@@ -129,8 +129,8 @@ $.srSmoothscroll();
 printext
 );
 	}
-	
-	
+
+
 	//** WOW
 	if(isset($_['enable_wow']) and $_['enable_wow'])
 	{
@@ -139,7 +139,7 @@ printext
 		add_code("jquery_code", <<<printext
 new WOW().init();
 printext
-); 		
+);
 	}
 
 	//** LIVE SEARCH
@@ -181,7 +181,7 @@ $(".live_search").keyup(function() {
 
 $(".live_search").blur(function(){
 	$("#live_result").fadeOut(500);
-}).focus(function() {		
+}).focus(function() {
 	$("#live_result").show();
 });
 
@@ -189,7 +189,7 @@ printext
 );
 	}
 
-	
+
 	//** GOTOP ICON
 	if(isset($_['gotop_position']) and $_['gotop_position']!='0')
 	{
@@ -207,8 +207,8 @@ $(window).scroll(function() {
 
 printext;
 	}
-	$_['gotop_icon'] = (isset($_['gotop_icon'])) ? "fa fa-$_[gotop_icon]":"glyphicon glyphicon-chevron-up";
-	
+	$_['gotop_icon'] = (isset($_['gotop_icon'])) ? "fa fa-$_[gotop_icon]":"fa fa-chevron-up";
+
 	if(isset($_['enable_enamad']) and $_['enable_enamad']==1 AND isset($_['enamad_code']) AND $_['enamad_code'])
 	{
 		$side = (isset($_['enamad_position'])) ? $_['enamad_position']:'left';
@@ -222,7 +222,7 @@ printext;
 	{
 		load_css('hover');
 	}
-	
+
 
 
 
@@ -234,7 +234,7 @@ if(!function_exists("add_widget"))
 function add_widget($title ="",$text,$data=array())
 {
 	global $_, $_db, $lang;
-	
+
 	add_content(
 				(isset($data['id'])) ? $data['id']:"",
 				$title,
@@ -242,7 +242,7 @@ function add_widget($title ="",$text,$data=array())
 				$text
 	);
 }
-	
+
 }
 
 ?>

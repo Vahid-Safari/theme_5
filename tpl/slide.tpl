@@ -40,7 +40,7 @@
 				</div>
 				<!--<div class='slide-btn'>{$value.product_button}</div> -->
 				{if="$value.price_status"}
-					<a id='add_{$value.id}' class='btn btn-product add_to_basket btn-custom' href='#add'><i class='glyphicon glyphicon-shopping-cart '></i> <span>{$value.add_to_basket}</span></a>
+					<a id='add_{$value.id}' class='btn btn-product add_to_basket btn-custom' href='#add'><i class='fa fa-shopping-cart '></i> <span>{$value.add_to_basket}</span></a>
 				{else}
 					<a class='btn btn-product btn-custom' href='{$value.link}'><span>{if="$value.price"}{$value.status_title}{else}{$value.more_info}{/if}</span></a>
 				{/if}				

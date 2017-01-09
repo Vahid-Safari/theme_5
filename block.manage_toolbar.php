@@ -9,13 +9,13 @@ function block_manage_toolbar($side='side_right')
 	global $_, $_db, $lang;
 
 	if(!IS_MEMBER)
-		return true; 
+		return true;
 	$user_menu = "";
 	$modules_num = 1;
 	$extra = "";
 	$manage_extra = array();
 	$extras = 0;
-	
+
 	if(isset($_['extra']))
 		foreach($_['extra'] as $par)
 			if($par[4])
@@ -40,7 +40,7 @@ if(!$manage_toolbar)
 		$pages = "";
 		$settings = "";
 		$settings .= "<li>".make_option(url('setting','home'), lang('home_setting'), "home", true, IS_EDITOR)."</li>";
-		
+
 		$add = $manage = "";
 		$_['add'] = $_['manage'] = array();//$_['extra'] =
 		$result = $_db->sql_query("SELECT * FROM " . MODULE_TABLE . " LEFT JOIN " . SITEMODULE_TABLE . " ON (sm_module_code = module_code) WHERE sm_site_id IN(0,$_[site_id])  ORDER BY module_order ASC ");
@@ -49,15 +49,15 @@ if(!$manage_toolbar)
 				if($row['module_page']== 1 AND $row['module_page_access']<=USER_LEVEL)
 				{
 					$title = (isset($lang["page_".$row['module_code']])) ? $lang["page_".$row['module_code']]: lang($row['module_name']);
-					
+
 					$pages .= "<li>".make_option(url('page_manage','',"new=".$row['module_code']), $title, "$row[module_icon]", true, $row['module_page_access'])."</li>";
 				}
 				//p("$pages");
 				if($row['module_setting']== 1 AND $row['module_setting_access']<=USER_LEVEL)
 					$settings .= "<li>".make_option(url('setting',$row['module_name']), lang($row['module_name'].'_setting'), "$row[module_icon]", true, $row['module_setting_access'])."</li>";
-			
+
 			$_['options'] =array();
-			
+
 			$module_name = $row['module_name'];
 			if(module_init($module_name))//!isset($_['inited'][$module_name])
 			{
@@ -67,14 +67,14 @@ if(!$manage_toolbar)
 				foreach($_['options'] as $par)
 					if($par[4])
 						$options .= "<li>".make_option($par[0],$par[1],$par[2],$par[3],$par[4])."</li>";
-				
+
 				if ($options != "")
 				{
 					$modules_num++;
 					$current = "";
 					$menu .="<span class='btn-group $lang[align]'><a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>".lang("module_$row[module_code]")." <span class='caret'></span></a><ul id='module_$row[module_code]' class='dropdown-menu'>$options</ul></span>";
 				}
-				
+
 				if(isset($_['add']))
 					foreach($_['add'] as $par)
 						if($par[4])
@@ -82,7 +82,7 @@ if(!$manage_toolbar)
 							//p($par[2]);
 							$add .= "<li>".make_option($par[0],$par[1],$par[2],$par[3],$par[4])."</li>";
 						}
-				
+
 				$have_item = false;
 				if(isset($_['manage']) and count($_['manage']))
 					foreach($_['manage'] as $par)
@@ -92,7 +92,7 @@ if(!$manage_toolbar)
 							$have_item = true;
 							$manage .= "<li>".make_option($par[0],$par[1],$par[2],$par[3],$par[4])."</li>";
 						}
-					
+
 				if($have_item)
 				{
 					$manage .= "<li class='divider'></li>";
@@ -107,17 +107,17 @@ if(!$manage_toolbar)
 
 		if($add)
 			$menu .="<li class='dropdown' id='menu-entries'><a href='#' data-toggle='dropdown' data-target='#menu-entries' ><i class='fa fa-plus'></i> <span class='text hidden-sm'>$lang[add_item]</span>  <b class='caret'></b></a><ul id='new_entries' class='dropdown-menu'>$add</ul></li>";
-		
+
 		if($pages)
 			$menu .="<li class='dropdown' id='menu-pages'><a href='#' data-toggle='dropdown' data-target='#menu-pages' ><i class='fa fa-plus-circle'></i> <span class='text hidden-sm'>$lang[add_page]</span>  <b class='caret'></b></a><ul id='new_pages' class='dropdown-menu'>$pages</ul></li>";
-					
+
 		if($manage)
 			$menu .="<li class='dropdown' id='menu-manage'><a href='#' data-toggle='dropdown' data-target='#menu-manage' ><i class='fa fa-edit'></i> <span class='text hidden-sm'>$lang[manage]</span>  <b class='caret'></b></a><ul id='manage_entries' class='dropdown-menu'>$manage</ul></li>";
-					
+
 		if($settings)
 			$menu .="<li class='dropdown' id='menu-settings'><a href='#' data-toggle='dropdown' data-target='#menu-settings' ><i class='fa fa-wrench'></i> <span class='text hidden-sm'>$lang[site_setting]</span>  <b class='caret'></b></a><ul id='settings' class='dropdown-menu'>$settings</ul></li>";
 
-		
+
 							// pull-$lang[alignx]
 		$user_menu ="
 	<ul class='nav navbar-nav navbar-$lang[alignx]'>
@@ -160,14 +160,12 @@ if(!$manage_toolbar)
       </div>
     </div>
 ";
-	//$_['manage_toolbar'] = str_replace("'icon-","'glyphicon glyphicon-",$_['manage_toolbar']);
-	//$_['manage_toolbar'] = str_replace("glyphicon","fa",$_['manage_toolbar']);
+
 	$_['manage_toolbar'] = str_replace("<i ","<span ",$_['manage_toolbar']);
 	$_['manage_toolbar'] = str_replace("</i>","</span>",$_['manage_toolbar']);
 	if($extra)
 	{
-		//$extra = str_replace("glyphicon","fa",$extra);
-		//$extra = str_replace("'icon-","'glyphicon glyphicon-",$extra);
+
 		$extra = str_replace("<i ","<span ",$extra);
 		$extra = str_replace("</i>","</span>",$extra);
 /*		if($_['admin_mode'])
@@ -177,7 +175,7 @@ if(!$manage_toolbar)
 			$_['manage_extra'] = str_replace("</li>","",$_['manage_extra']);
 			$extra ="";
 		}*/
-		
+
 	}
 
 
@@ -195,11 +193,11 @@ else
 	if($extra)
 			$extra ="<li class='dropdown' id='menu-extra'><a href='#' data-toggle='dropdown' data-target='#menu-extra' ><i class='fa fa-asterisk'></i> <span class='text hidden-sm'>دسترسی سریع <span class='label label-success' style='float: none;margin: auto;'>$extras</span></span>  <b class='caret'></b></a><ul id='extra' class='dropdown-menu'>$extra</ul></li>";
 			//$extra ="<li class='dropdown' id='menu-extra'><a href='#' data-toggle='dropdown' data-target='#menu-extra' ><i class='fa fa-asterisk icon-white'></i> <span style='color: #fff;text-shadow: 0 1px 0 #000;' class='text hidden-sm'>دسترسی سریع</span>  <b class='caret'></b></a><ul id='extra' class='dropdown-menu'>$extra</ul></li>";
-	
+
 	$_['manage_toolbar'] = str_replace('{extra}',"$extra",$_['manage_toolbar']);
 	//$_['manage_toolbar'] = str_replace('{extra_menu}',"$extra_menu",$_['manage_toolbar']);
 	$_['manage_toolbar'] = str_replace('{upgrade}',"$upgrade",$_['manage_toolbar']);
-	$_['site_classes'][]= "toolbar_on"; 
+	$_['site_classes'][]= "toolbar_on";
 	$config = "";
 	if($_['site_recache'] == 1 )//AND $_['site_plan'] > 3
 	{
@@ -219,7 +217,7 @@ $('.site-recache a').on('click', function(event) {
 printext;
 
 	}
-	
+
 	if((IS_ADMINISTRATOR or (IS_EDITOR and $_['access_config_theme'])) and !$_['admin_mode'] )
 	{
 		if(IS_DEVELOPER)
@@ -250,11 +248,11 @@ Mousetrap.bind(['command+f6', 'ctrl+f6'], function(e) {
 });
 
 printext;
-	
+
 		}
 		$config .= "
 		<li class='dropdown hidden-xs' id='menu-theme'><a data-toggle='dropdown' class='open_config' href='".url("theme_manage","config")."'><i class='fa fa-leaf'></i> <span class='text hidden-sm '>طرح</span>  <b class='caret'></b></a>
-			<div class='dropdown-menu pull-$lang[alignx]' id='edit_config_theme' style='padding:0;border-top:0;border-radius:0'> 
+			<div class='dropdown-menu pull-$lang[alignx]' id='edit_config_theme' style='padding:0;border-top:0;border-radius:0'>
 			</div>
 		</li>
 ";
@@ -289,11 +287,11 @@ printext;
 
 $_['css'] .= "#edit_config_theme{width: 800px;padding-right: 0px;overflow-x: hidden;position: fixed;left: 0px;right:auto;bottom: 0px;top: 50px}";
 
-		
+
 	}
 
 	$_['manage_toolbar'] = str_replace('{config}',"$config",$_['manage_toolbar']);
-	
+
 	load_javascript("jquery.bootstrap".$_['bootstrap_version']);
 	unset($_['add'],$_['manage'],$_['extra']);
 	//p($_,1);

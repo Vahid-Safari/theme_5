@@ -55,9 +55,9 @@
 			              <label for='quantity'>تعداد</label>
 			              <input type='number' id='quantity' name='quantity' value='1' min='1' class='form-control'>
 			              <br/>
-			              <a id='add_{$id}' id='add_to_basket' class='btn btn-product btn-custom btn-lg add_to_basket' data-id='{$id}'><i class='glyphicon glyphicon-shopping-cart'></i>اضافه به سبد</a>	
+			              <a id='add_{$id}' id='add_to_basket' class='btn btn-product btn-custom btn-lg add_to_basket' data-id='{$id}'><i class='fa fa-shopping-cart'></i>اضافه به سبد</a>	
 										{if="$enable_wishlist"} <div class='product_wishlist' >
-											<a data-id='{$id}' class='btn-wishlist btn-wishlist-{$id}' ><i class='glyphicon {if="$wished"}fa fa-heart{else}fa fa-heart-o{/if}'></i></a>
+											<a data-id='{$id}' class='btn-wishlist btn-wishlist-{$id}' ><i class='fa {if="$wished"}fa fa-heart{else}fa fa-heart-o{/if}'></i></a>
 										</div>
 										{/if}			              
 			            </div>

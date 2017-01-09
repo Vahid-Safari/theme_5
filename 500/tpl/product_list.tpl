@@ -9,7 +9,7 @@
 					</a>
 					<div class='product_details'>
 					<a class='product_title' title='{$value.title}' href='{$value.link}' ><h3>{$value.title}</h3></a>
-					
+
 					<div class='product_thumb_subtitle'>{$value.subtitle}</div>
 					</div>
 					<div class='product_rate'>
@@ -21,11 +21,11 @@
 					</div>
 					<!--
 					<div class='thumb_subtitle'>{$value.subtitle}</div>
-					
+
 				    <div class='product_thumb_price price'>
 						{if="$value.price"}
 							{if="$value.old_price"}
-								<span class='old_price'>{$value.old_price}</span> 
+								<span class='old_price'>{$value.old_price}</span>
 							{/if}
 							<span>{$value.price} {$value.currency}</span>
 						{/if}
@@ -34,9 +34,9 @@
 						{if="$value.price_status and !$value.variants"}
 							<input type='hidden' name='id' value='{$value.id}' >
 							<input type='hidden' name='data' value='add_product' >
-							<a id='add_{$value.id}' class='btn btn-product add_to_basket btn-custom'  data-id='{$value.id}'><i class='glyphicon glyphicon-shopping-cart '></i> <span>{$value.add_to_basket}</span></a>
+							<a id='add_{$value.id}' class='btn btn-product add_to_basket btn-custom'  data-id='{$value.id}'><i class='fa fa-shopping-cart '></i> <span>{$value.add_to_basket}</span></a>
 						{else}
-							<a class='btn btn-product btn-custom' href='{$value.link}'><i class='glyphicon glyphicon-list '></i> <span>{$value.more_info}</span></a>	
+							<a class='btn btn-product btn-custom' href='{$value.link}'><i class='fa fa-list '></i> <span>{$value.more_info}</span></a>	
 						{/if}
 						</form>
 				    {if="$value.badges"}
